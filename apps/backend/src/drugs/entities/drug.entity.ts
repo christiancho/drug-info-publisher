@@ -32,53 +32,56 @@ export class Drug {
   @Column({ nullable: true })
   title: string;
 
-  @Column('text', { nullable: true })
-  indicationsAndUsage: string;
+  @Column('jsonb', { nullable: true })
+  indicationsAndUsage: any;
 
-  @Column('text', { nullable: true })
-  dosageAndAdministration: string;
+  @Column('jsonb', { nullable: true })
+  dosageAndAdministration: any;
 
-  @Column('text', { nullable: true })
-  dosageFormsAndStrengths: string;
+  @Column('jsonb', { nullable: true })
+  dosageFormsAndStrengths: any;
 
-  @Column('text', { nullable: true })
-  contraindications: string;
+  @Column('jsonb', { nullable: true })
+  contraindications: any;
 
-  @Column('text', { nullable: true })
-  warningsAndPrecautions: string;
+  @Column('jsonb', { nullable: true })
+  warningsAndPrecautions: any;
 
-  @Column('text', { nullable: true })
-  adverseReactions: string;
+  @Column('jsonb', { nullable: true })
+  adverseReactions: any;
 
-  @Column('text', { nullable: true })
-  clinicalPharmacology: string;
+  @Column('jsonb', { nullable: true })
+  clinicalPharmacology: any;
 
-  @Column('text', { nullable: true })
-  clinicalStudies: string;
+  @Column('jsonb', { nullable: true })
+  clinicalStudies: any;
 
-  @Column('text', { nullable: true })
-  mechanismOfAction: string;
+  @Column('jsonb', { nullable: true })
+  mechanismOfAction: any;
 
-  @Column('text', { nullable: true })
-  boxedWarning: string;
+  @Column('jsonb', { nullable: true })
+  boxedWarning: any;
 
-  @Column('text', { nullable: true })
-  highlights: string;
+  @Column('jsonb', { nullable: true })
+  highlights: any;
 
-  @Column('text', { nullable: true })
-  aiEnhancedTitle: string;
+  @Column('jsonb', { nullable: true })
+  description: any;
 
-  @Column('text', { nullable: true })
-  aiMetaDescription: string;
+  @Column('jsonb', { nullable: true })
+  howSupplied: any;
 
-  @Column('text', { nullable: true })
-  aiSummary: string;
+  @Column('jsonb', { nullable: true })
+  instructionsForUse: any;
 
-  @Column('text', { nullable: true })
-  aiFaq: string;
+  @Column('jsonb', { nullable: true })
+  nonclinicalToxicology: any;
 
-  @Column('text', { nullable: true })
-  aiRelatedDrugs: string;
+  @Column('jsonb', { nullable: true })
+  useInSpecificPopulations: any;
+
+  @Column('jsonb', { nullable: true })
+  drugInteractions: any;
 
   @CreateDateColumn()
   createdAt: Date;

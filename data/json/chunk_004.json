@@ -1,0 +1,769 @@
+[
+  {
+    "drugName": "Jaypirca",
+    "setId": "bd551845-0878-49a4-860f-839b83f6b801",
+    "slug": "jaypirca-bd55184",
+    "labeler": "Lilly",
+    "label": {
+      "genericName": "pirtobrutinib",
+      "labelerName": "Eli Lilly and Company",
+      "productType": "HUMAN PRESCRIPTION DRUG LABEL",
+      "effectiveTime": "20241113",
+      "title": "JAYPIRCA",
+      "indicationsAndUsage": {
+        "title": "1 INDICATIONS AND USAGE",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.1 Mantle Cell Lymphoma",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "JAYPIRCA® is indicated for the treatment of adult patients with relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a BTK inhibitor."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "This indication is approved under accelerated approval based on response rate [see Clinical Studies (14.1)]. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.2 Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "JAYPIRCA is indicated for the treatment of adult patients with chronic lymphocytic leukemia or small lymphocytic lymphoma (CLL/SLL) who have received at least two prior lines of therapy, including a BTK inhibitor and a BCL-2 inhibitor."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "This indication is approved under accelerated approval based on response rate [see Clinical Studies (14.2)]. Continued approval for this indication may be contingent upon verification and description of clinical benefit in a confirmatory trial."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dosageAndAdministration": {
+        "title": "2 DOSAGE AND ADMINISTRATION",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.1 Recommended Dosage",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The recommended dosage of JAYPIRCA is 200 mg orally once daily until disease progression or unacceptable toxicity."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Advise patients of the following:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "Swallow tablets whole with water. Do not cut, crush, or chew tablets.",
+                    "Take JAYPIRCA at the same time each day. JAYPIRCA may be taken with or without food.",
+                    "If a dose of JAYPIRCA is missed by more than 12 hours, do not make up the dose and take the next dose as scheduled."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.2 Dosage Modifications for Adverse Reactions",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Recommended dosage modifications of JAYPIRCA for adverse reactions are presented in Table 1[see Warnings and Precautions (5.1, 5.2, 5.3, and 5.4)]."
+                },
+                {
+                  "type": "table",
+                  "content": {
+                    "headers": [
+                      "Dose modification is not recommended for asymptomatic lymphocytosis. Asymptomatic lipase increase may not necessarily warrant dose modification.",
+                      "Adverse Reaction",
+                      "Occurrences Requiring Dosage Modification",
+                      "Modification(Starting Dosage: 200 mg once daily)"
+                    ],
+                    "rows": [
+                      [
+                        "a Evaluate the benefit-risk before resuming treatment at the same dose for a Grade 4 non-hematological toxicity."
+                      ],
+                      [
+                        "Adverse Reaction",
+                        "Occurrences Requiring Dosage Modification",
+                        "Modification(Starting Dosage: 200 mg once daily)"
+                      ],
+                      [
+                        "Grade 3 or greater non-hematologic toxicity aAbsolute neutrophil count < 1 to 0.5 x 109/L with fever and/or infectionAbsolute neutrophil count < 0.5 x 109/L lasting 7 or more daysPlatelet count < 50 to 25 x 109/L with bleedingPlatelet count < 25 x 109/L",
+                        "First occurrence",
+                        "Interrupt JAYPIRCA until recovery to Grade 1 or baseline; restart at original dosage (200 mg once daily)a."
+                      ],
+                      [
+                        "Second occurrence",
+                        "Interrupt JAYPIRCA until recovery to Grade 1 or baseline; restart at 100 mg once daily."
+                      ],
+                      [
+                        "Third occurrence",
+                        "Interrupt JAYPIRCA until recovery to Grade 1 or baseline; restart at 50 mg once daily."
+                      ],
+                      [
+                        "Fourth occurrence",
+                        "Discontinue JAYPIRCA."
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.3 Dosage Modifications for Patients with Severe Renal Impairment",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "For patients with severe renal impairment (eGFR 15-29 mL/min), reduce the JAYPIRCA dose to 100 mg once daily if the current dose is 200 mg once daily otherwise reduce the dose by 50 mg. If the current dosage is 50 mg once daily, discontinue JAYPIRCA [see Use in Specific Populations (8.7), Clinical Pharmacology (12.3)]. No dosage adjustment of JAYPIRCA is recommended in patients with mild to moderate renal impairment (eGFR 30-89 mL/min)."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.4 Dosage Modifications for Concomitant Use with Strong CYP3A Inhibitors",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Avoid concomitant use of strong CYP3A inhibitors with JAYPIRCA [see Drug Interactions (7.1), Clinical Pharmacology (12.3)]. If concomitant use of a strong CYP3A inhibitor is unavoidable, reduce the JAYPIRCA dose by 50 mg. If the current dosage is 50 mg once daily, interrupt JAYPIRCA treatment for the duration of strong CYP3A inhibitor use. After discontinuation of a strong CYP3A inhibitor for 5 half-lives, resume the JAYPIRCA dose that was taken prior to initiating the strong CYP3A inhibitor."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.5 Dosage Modifications for Concomitant Use with CYP3A Inducers",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Avoid concomitant use of strong or moderate CYP3A inducers with JAYPIRCA [see Drug Interactions (7.1), Clinical Pharmacology (12.3)]. If concomitant use with moderate CYP3A inducers is unavoidable and the current dosage of JAYPIRCA is 200 mg once daily, increase the dose to 300 mg. If the current dosage is 50 mg or 100 mg once daily, increase the dose by 50 mg."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dosageFormsAndStrengths": {
+        "title": "3 DOSAGE FORMS AND STRENGTHS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Tablets:"
+          },
+          {
+            "type": "paragraph",
+            "content": "Each 50 mg tablet is blue, arc-triangle shaped, film-coated, and debossed with âLilly 50â on one side and â6902â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "Each 100 mg tablet is blue, round, film-coated, and debossed with âLilly 100â on one side and â7026â on the other side."
+          }
+        ]
+      },
+      "warningsAndPrecautions": {
+        "title": "5 WARNINGS AND PRECAUTIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.1 Infections",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Fatal and serious infections (including bacterial, viral, or fungal infections) and opportunistic infections have occurred in patients treated with JAYPIRCA. In the clinical trial, Grade 3 or higher infections occurred in 24% of 593 patients, most commonly pneumonia (14%), with fatal infections occurring in 4.4% of patients. Sepsis occurred in 6% of patients and febrile neutropenia in 4%. In patients with CLL/SLL, Grade 3 or higher infections occurred in 32% of patients, with fatal infections occurring in 8%. Opportunistic infections after treatment with JAYPIRCA have included, but are not limited to, Pneumocystis jirovecii pneumonia and fungal infection [see Adverse Reactions (6.1)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Consider prophylaxis, including vaccinations and antimicrobial prophylaxis, in patients who are at increased risk for infections, including opportunistic infections. Monitor patients for signs and symptoms of infection, evaluate promptly, and treat appropriately. Based on severity, reduce dose, temporarily withhold, or permanently discontinue JAYPIRCA [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.2 Hemorrhage",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Fatal and serious hemorrhage has occurred with JAYPIRCA. Major hemorrhage (defined as Grade 3 or higher bleeding or any central nervous system bleeding) occurred in 3% of 593 patients treated with JAYPIRCA, including gastrointestinal hemorrhage; fatal hemorrhage occurred in 0.3% of patients. Bleeding of any grade, excluding bruising and petechiae, occurred in 17% of patients [see Adverse Reactions (6.1)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Major hemorrhage occurred in 2.3% of patients taking JAYPIRCA without antithrombotic agents and 0.7% of patients taking JAYPIRCA with antithrombotic agents. Consider the risks and benefits of antithrombotic agents when co-administered with JAYPIRCA. Monitor patients for signs of bleeding. Based on severity of bleeding, reduce dose, temporarily withhold, or permanently discontinue JAYPIRCA [see Dosage and Administration (2.2)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Consider the benefit-risk of withholding JAYPIRCA for 3 to 7 days pre- and post-surgery depending upon the type of surgery and risk of bleeding."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.3 Cytopenias",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "JAYPIRCA can cause cytopenias, including neutropenia, thrombocytopenia, and anemia."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In the clinical trial, Grade 3 or 4 cytopenias, including decreased neutrophils (26%), decreased platelets (12%), and decreased hemoglobin (12%) developed in patients treated with JAYPIRCA. Grade 4 decreased neutrophils developed in 14% of patients and Grade 4 decreased platelets developed in 6% of patients [see Adverse Reactions (6.1)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Monitor complete blood counts regularly during treatment. Based on severity, reduce dose, temporarily withhold, or permanently discontinue JAYPIRCA [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.4 Cardiac Arrhythmias",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Cardiac arrhythmias, including atrial fibrillation and atrial flutter, were reported in recipients of JAYPIRCA. Atrial fibrillation or flutter were reported in 3.2% of patients, with Grade 3 or 4 atrial fibrillation or flutter reported in 1.5% of 593 patients in the clinical trial [see Adverse Reactions (6.1)]. Other serious cardiac arrhythmias such as supraventricular tachycardia and cardiac arrest occurred in 0.5% of patients. Patients with cardiac risk factors, such as hypertension, or previous arrhythmias may be at increased risk."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Monitor for signs and symptoms of arrhythmias (e.g., palpitations, dizziness, syncope, dyspnea) and manage appropriately. Based on severity, reduce dose, temporarily withhold, or permanently discontinue JAYPIRCA [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.5 Second Primary Malignancies",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Second primary malignancies, including non-skin carcinomas, developed in 9% of 593 patients treated with JAYPIRCA monotherapy. The most frequent malignancy was non-melanoma skin cancer, reported in 4.6% of 593 patients. Other second primary malignancies included solid tumors (including genitourinary and breast cancers) and melanoma. Advise patients to use sun protection and monitor patients for the development of second primary malignancies."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.6 Hepatotoxicity, Including Drug-Induced Liver Injury",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Hepatotoxicity, including severe, life-threatening, and potentially fatal cases of drug-induced liver injury (DILI), has occurred in patients treated with Bruton tyrosine kinase inhibitors, including JAYPIRCA."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Evaluate bilirubin and transaminases at baseline and throughout treatment with JAYPIRCA. For patients who develop abnormal liver tests after JAYPIRCA, monitor more frequently for liver test abnormalities and clinical signs and symptoms of hepatic toxicity. If DILI is suspected, withhold JAYPIRCA. Upon confirmation of DILI, discontinue JAYPIRCA."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.7 Embryo-Fetal Toxicity",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Based on findings in animals, JAYPIRCA can cause fetal harm when administered to a pregnant woman. In animal reproduction studies, administration of pirtobrutinib to pregnant rats during the period of organogenesis caused embryo-fetal toxicity including embryo-fetal mortality and malformations at maternal exposures (AUC) approximately 3-times the recommended dose of 200 mg once daily. Advise pregnant women of the potential risk to a fetus. Advise females of reproductive potential to use effective contraception during treatment with JAYPIRCA and for one week after the last dose [see Use in Specific Populations (8.1, 8.3)]."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "adverseReactions": {
+        "title": "6 ADVERSE REACTIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "The following clinically significant adverse reactions are described elsewhere in the labeling:"
+          },
+          {
+            "type": "list",
+            "content": [
+              "Infections [see Warnings and Precautions (5.1)]",
+              "Hemorrhage [see Warnings and Precautions (5.2)]",
+              "Cytopenias [see Warnings and Precautions (5.3)]",
+              "Atrial Fibrillation and Atrial Flutter [see Warnings and Precautions (5.4)]",
+              "Second Primary Malignancies [see Warnings and Precautions (5.5)]",
+              "Hepatotoxicity, including DILI [see Warnings and Precautions (5.6)]"
+            ]
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.1 Clinical Trials Experience",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be compared to rates in the clinical trials of another drug and may not reflect the rates observed in the general patient population."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The data in the WARNINGS AND PRECAUTIONS reflect exposure to JAYPIRCA as a single-agent, administered at 200 mg once daily in 593 patients with hematologic malignancies in the BRUIN study. Among these 593 patients, the median duration of exposure was 10 months, 62% were exposed for at least 6 months and 45% were exposed for at least one year."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In this pooled safety population, the most common (â¥ 20%) adverse reactions, including laboratory abnormalities, were decreased neutrophil count (46%), decreased hemoglobin (39%), fatigue (32%), decreased lymphocyte count (31%), musculoskeletal pain (30%), decreased platelet count (29%), diarrhea (24%), COVID-19 (22%), bruising (21%), and cough (20%)."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "drugInteractions": {
+        "title": "7 DRUG INTERACTIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "7.1 Effect of Other Drugs on JAYPIRCA",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "7.2 Effect of JAYPIRCA on Other Drugs",
+              "content": []
+            }
+          }
+        ]
+      },
+      "clinicalPharmacology": {
+        "title": "12 CLINICAL PHARMACOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Pirtobrutinib is a small molecule, noncovalent inhibitor of BTK. BTK is a signaling protein of the B-cell antigen receptor (BCR) and cytokine receptor pathways. In B-cells, BTK signaling results in activation of pathways necessary for B-cell proliferation, trafficking, chemotaxis, and adhesion. Pirtobrutinib binds to wild type BTK and BTK harboring C481 mutations, leading to inhibition of BTK kinase activity. In nonclinical studies, pirtobrutinib inhibited BTK-mediated B-cell CD69 expression and inhibited malignant B-cell proliferation. Pirtobrutinib showed dose-dependent anti-tumor activities in BTK wild type and BTK C481S mutant mouse xenograft models."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.2 Pharmacodynamics",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "At the recommended dosage of 200 mg once daily, pirtobrutinib trough concentrations exceeded the BTK IC96. BTK occupancy is maintained throughout the dosing interval, regardless of the intrinsic rate of BTK turnover."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.3 Pharmacokinetics",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The pharmacokinetics of pirtobrutinib were characterized in healthy subjects and in patients with cancer. Pirtobrutinib exposure (AUC) and Cmax increases proportionally following single oral doses ranging from 300 mg to 800 mg (1.5 to 4 times the approved recommended dosage) and once daily doses ranging from 25 â 300 mg (0.125 to 1.5 times the recommended dosage). Steady state was achieved within 5 days of once daily dosing, and the mean (CV%) accumulation ratio was 1.63 (26.7%) based on AUC after administration of 200 mg dosages."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Following administration of the recommended dosage, the geometric mean (CV%) steady-state AUC and Cmax of pirtobrutinib were 90300 h*ng/mL (40%) and 6380 ng/mL (26%), respectively. The geometric mean (CV%) AUC0-24 and Cmax of pirtobrutinib on Cycle 1 Day 8 were 81800 h*ng/mL (66.6%) and 3670 ng/mL (89.5%), respectively."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "clinicalStudies": {
+        "title": "14 CLINICAL STUDIES",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.1 Mantle Cell Lymphoma",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The efficacy of JAYPIRCA in patients with MCL was evaluated in BRUIN [NCT03740529], an open-label, international, multicohort, single-arm study of JAYPIRCA as monotherapy. Efficacy was based on 120 patients with MCL treated with JAYPIRCA who were previously treated with a BTK inhibitor. JAYPIRCA was given orally at a dose of 200 mg once daily and was continued until disease progression or unacceptable toxicity. Patients with active central nervous system lymphoma or allogeneic hematopoietic stem cell transplantation (HSCT) or CAR-T cell therapy within 60 days were excluded."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The median age was 71 years (range: 46 to 88 years); 79% were male; 78% were White, 14% Asian, 1.7% Black or African American. Seventy-eight percent of patients had the classic/leukemic variant of MCL, 12% had pleomorphic MCL, and 11% had blastoid MCL. The simplified Mantle Cell Lymphoma International Prognostic Index (sMIPI) score was low in 15%, intermediate in 59%, and high in 26% of patients. Patients received a median number of 3 prior lines of therapy (range: 1 to 9) with 93% having received 2 or more prior lines. All received 1 or more prior lines of therapy containing a BTK inhibitor; other prior therapies included chemoimmunotherapy in 88%, HSCT in 20%, lenalidomide in 18%, and CAR-T therapy in 9%. The most common prior BTK inhibitors received were ibrutinib (67%), acalabrutinib (30%), and zanubrutinib (8%). Patients may have received more than one prior BTK inhibitor; 83% of patients discontinued the last BTK inhibitor for refractory or progressive disease, 10% discontinued for toxicity, and 5% discontinued for other reasons."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Efficacy was based on overall response rate (ORR) and duration of response (DOR), as assessed by an independent review committee (IRC) using 2014 Lugano criteria. Efficacy results are shown in Table 6. Additionally, the Kaplan-Meier estimate for the DOR rate at 6 months was 65.3% (95% CI: 49.8, 77.1)."
+                },
+                {
+                  "type": "table",
+                  "content": {
+                    "headers": [
+                      "CI, confidence interval; CR, complete response; DOR, duration of response; PR, partial response; NE, not estimable.",
+                      "Outcome",
+                      "JAYPIRCA 200 mg once daily(N = 120)"
+                    ],
+                    "rows": [
+                      [
+                        "a PET-CT scans were utilized in response assessments (in 41% of patients), with the remainder being assessed by CT scans only."
+                      ],
+                      [
+                        "b ORR using CT scan-based assessments in all patients was 48% (95% CI: 38, 57) and CR rate was 13%."
+                      ],
+                      [
+                        "c Based on Kaplan-Meier estimation. Estimated median follow-up was 7.3 months."
+                      ],
+                      [
+                        "Outcome",
+                        "JAYPIRCA 200 mg once daily(N = 120)"
+                      ],
+                      [
+                        "Overall Response Ratea,b",
+                        ""
+                      ],
+                      [
+                        "ORR, n",
+                        "60 (50%)"
+                      ],
+                      [
+                        "(95% CI, %)",
+                        "41, 59"
+                      ],
+                      [
+                        "CR, n",
+                        "15 (13%)"
+                      ],
+                      [
+                        "PR, n",
+                        "45 (38%)"
+                      ],
+                      [
+                        "Time to Response",
+                        ""
+                      ],
+                      [
+                        "Median (range), months",
+                        "1.8 (0.8, 4.2)"
+                      ],
+                      [
+                        "Duration of Responsec",
+                        ""
+                      ],
+                      [
+                        "Number censored, n",
+                        "36"
+                      ],
+                      [
+                        "Median DOR, months (95% CI)",
+                        "8.3 (5.7, NE)"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.2 Chronic Lymphocytic Leukemia/Small Lymphocytic Lymphoma",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The efficacy of JAYPIRCA in patients with CLL/SLL was evaluated in BRUIN [NCT03740529], an open-label, international, single-arm, multicohort study of JAYPIRCA as monotherapy. Efficacy was based on 108 patients with CLL/SLL treated with JAYPIRCA who were previously treated with at least two prior lines of therapy, including a BTK inhibitor and a BCL-2 inhibitor. JAYPIRCA was given orally at a dose of 200 mg once daily and was continued until disease progression or unacceptable toxicity. The trial required a platelet count â¥ 50 x 109/L, absolute neutrophil count â¥ 0.75 x 109/L, hepatic transaminases â¤ 2.5 times upper limit of normal (ULN), and an ECOG performance status of 0 to 2. The trial excluded patients with significant cardiovascular disease, major bleeding, uncontrolled or symptomatic arrhythmias, prolonged QTc interval, or need for a strong CYP3A inhibitor or inducer or strong P-gp inhibitor. Patients with active central nervous system (CNS) involvement by lymphoma or allogeneic hematopoietic stem cell transplantation (HSCT) within 60 days were excluded."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The median age was 68 years (range: 41 to 88 years); 69% were male; 89% were White, 4.6% Black or African American, 1.9% Asian and 1.9% were Hispanic or Latino. Baseline ECOG performance status was 0 or 1 in 91% of patients and 48% of patients had Rai stage III or IV disease. Among those patients with central testing available, 42% (37 of 88 patients) had a C481 BTK mutation, 54% (43 of 79 patients) had 17p deletion and/or TP53 mutation, 93% (77 of 83 patients) had unmutated IGHV, and 22% (16 of 72 patients) had 11q deletion. Patients received a median number of 5 prior lines of therapy (range: 2 to 11). The most common prior BTK inhibitors received were ibrutinib (97%), acalabrutinib (9%), and zanubrutinib (0.9%). Seventy-seven percent of patients discontinued the last BTK inhibitor for refractory or progressive disease, 13% discontinued for toxicity, and 10% discontinued for other reasons."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Efficacy was established based on overall response rate (ORR) and duration of response (DOR), as assessed by an independent review committee (IRC) using 2018 iwCLL criteria. Efficacy results are shown in Table 7. The median time to response was 3.7 months (range: 1.7, 27.9 months)."
+                },
+                {
+                  "type": "table",
+                  "content": {
+                    "headers": [
+                      "CI, confidence interval; PR, partial response.",
+                      "Outcome",
+                      "JAYPIRCA 200 mg once daily(N = 108)"
+                    ],
+                    "rows": [
+                      [
+                        "a Based on Kaplan-Meier estimation. Estimated median follow-up was 15.7 months."
+                      ],
+                      [
+                        "Outcome",
+                        "JAYPIRCA 200 mg once daily(N = 108)"
+                      ],
+                      [
+                        "Overall Response Rate",
+                        ""
+                      ],
+                      [
+                        "ORR, n",
+                        "78 (72%)"
+                      ],
+                      [
+                        "(95% CI, %)",
+                        "63, 80"
+                      ],
+                      [
+                        "PR, n",
+                        "78 (72%)"
+                      ],
+                      [
+                        "Duration of Responsea",
+                        ""
+                      ],
+                      [
+                        "Median DOR, months (95% CI)",
+                        "12.2 (9.3, 14.7)"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "howSupplied": {
+        "title": "16 HOW SUPPLIED/STORAGE AND HANDLING",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "How Supplied"
+          },
+          {
+            "type": "paragraph",
+            "content": "JAYPIRCA tablets are supplied as follows:"
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "Tablet Strength",
+                "Description",
+                "Package Configuration",
+                "NDC Number"
+              ],
+              "rows": [
+                [
+                  "Tablet Strength",
+                  "Description",
+                  "Package Configuration",
+                  "NDC Number"
+                ],
+                [
+                  "50 mg",
+                  "Blue, film coated, arc-triangle shaped tablets debossed with âLilly 50â on one side and â6902â on the other side.",
+                  "Bottle with child-resistant closure.Each bottle contains 30 tablets.",
+                  "0002-6902-30"
+                ],
+                [
+                  "100 mg",
+                  "Blue, film coated, round tablets debossed with âLilly 100â on one side and â7026â on the other side.",
+                  "Bottle with child-resistant closure.Each bottle contains 60 tablets.",
+                  "0002-7026-60"
+                ]
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "Storage and Handling"
+          },
+          {
+            "type": "paragraph",
+            "content": "Store JAYPIRCA tablets at room temperature 20°C to 25°C (68°F to 77°F); excursions permitted between 15°C and 30°C (59°F and 86°F) ([see USP Controlled Room Temperature])."
+          }
+        ]
+      },
+      "useInSpecificPopulations": {
+        "title": "8 USE IN SPECIFIC POPULATIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.1 Pregnancy",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.2 Lactation",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.3 Females and Males of Reproductive Potential",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Based on findings from animal studies, JAYPIRCA can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.4 Pediatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Safety and effectiveness of JAYPIRCA have not been established in pediatric patients."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.5 Geriatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Of the patients with MCL who received the 200 mg dose of JAYPIRCA in BRUIN, 93 (78%) were 65 years of age and older and 39 (33%) were 75 years and older [see Clinical Studies (14.1)]. Clinical studies of JAYPIRCA did not include sufficient numbers of patients with MCL who were less than 65 years of age to determine whether older patients respond differently from younger adult patients. Of the patients with CLL/SLL who received the 200 mg once daily dose of JAYPIRCA in BRUIN, 68 (63%) were 65 years of age and older and 21 (19%) were 75 years and older [see Clinical Studies (14.2)]. No overall differences in effectiveness were observed between younger and older patients."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In the pooled safety population in patients with hematologic malignancies, 401 (68%) were 65 years of age and older, while 154 (26%) were 75 years of age and older. Patients aged 65 years and older experienced higher rates of Grade 3 and higher adverse reactions and serious adverse reactions compared to patients who were less than 65 years of age."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.6 Renal Impairment",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Severe renal impairment (eGFR15-29 mL/min) increases pirtobrutinib exposure [see Clinical Pharmacology (12.3)]. Reduce the JAYPIRCA dosage in patients with severe renal impairment [see Dosage and Administration (2.3)]. No dosage adjustment of JAYPIRCA is recommended in patients with mild (60-89 mL/min) or moderate (30-59 mL/min) renal impairment."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.7 Hepatic Impairment",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "No dosage adjustment of JAYPIRCA is recommended in patients with mild hepatic impairment (total bilirubin â¤ upper limit of normal (ULN) and aspartate aminotransferase (AST) > ULN or total bilirubin > 1 to 1.5 Ã ULN and any AST), moderate hepatic impairment (total bilirubin > 1.5 to 3 Ã ULN and any AST), or severe hepatic impairment (total bilirubin > 3 Ã ULN and any AST) [see Clinical Pharmacology (12.3)]."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "description": {
+        "title": "11 DESCRIPTION",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Pirtobrutinib is a kinase inhibitor. It is an orally available, small molecule ATP-competitive inhibitor of BTK. The active pharmaceutical ingredient is pirtobrutinib with the molecular formula C22H21F4N5O3 and a molecular weight of 479.44 g/mol. The chemical name for pirtobrutinib is 5-amino-3-{4-[(5-fluoro-2-methoxybenzamido)methyl]phenyl}-1-[(2S)-1,1,1-trifluoropropan-2-yl]-1H-pyrazole-4-carboxamide."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pirtobrutinib is a white to practically white to yellow to brown solid. The aqueous solubility of pirtobrutinib is considered practically insoluble, or insoluble, across the pH 1 to pH 7 range."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pirtobrutinib tablets are supplied as 50 mg or 100 mg film-coated, debossed tablets for oral administration. Each tablet contains inactive ingredients of croscarmellose sodium, hypromellose acetate succinate, lactose monohydrate, magnesium stearate, microcrystalline cellulose and silicon dioxide. The tablet film coating material contains FD&C Blue #2, hypromellose, titanium dioxide and triacetin."
+          }
+        ]
+      },
+      "nonclinicalToxicology": {
+        "title": "13 NONCLINICAL TOXICOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "13.1 Carcinogenesis, mutagenesis, impairment of fertility",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Carcinogenicity studies have not been conducted with pirtobrutinib."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Pirtobrutinib was not mutagenic in a bacterial mutagenicity (Ames) assay. Pirtobrutinib was aneugenic in in vitro micronucleus assays using human peripheral blood lymphocytes. Pirtobrutinib was not genotoxic in an in vivo rat bone marrow micronucleus assay at doses up to 2000 mg/kg."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Studies to assess the effects of pirtobrutinib on fertility have not been conducted. In repeat-dose toxicity studies of up to 3-months duration conducted with pirtobrutinib in rats and dogs, no effects on male or female reproductive organs were identified."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "mechanismOfAction": {
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Pirtobrutinib is a small molecule, noncovalent inhibitor of BTK. BTK is a signaling protein of the B-cell antigen receptor (BCR) and cytokine receptor pathways. In B-cells, BTK signaling results in activation of pathways necessary for B-cell proliferation, trafficking, chemotaxis, and adhesion. Pirtobrutinib binds to wild type BTK and BTK harboring C481 mutations, leading to inhibition of BTK kinase activity. In nonclinical studies, pirtobrutinib inhibited BTK-mediated B-cell CD69 expression and inhibited malignant B-cell proliferation. Pirtobrutinib showed dose-dependent anti-tumor activities in BTK wild type and BTK C481S mutant mouse xenograft models."
+                }
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "Pirtobrutinib is a small molecule, noncovalent inhibitor of BTK. BTK is a signaling protein of the B-cell antigen receptor (BCR) and cytokine receptor pathways. In B-cells, BTK signaling results in activation of pathways necessary for B-cell proliferation, trafficking, chemotaxis, and adhesion. Pirtobrutinib binds to wild type BTK and BTK harboring C481 mutations, leading to inhibition of BTK kinase activity. In nonclinical studies, pirtobrutinib inhibited BTK-mediated B-cell CD69 expression and inhibited malignant B-cell proliferation. Pirtobrutinib showed dose-dependent anti-tumor activities in BTK wild type and BTK C481S mutant mouse xenograft models."
+          }
+        ]
+      },
+      "contraindications": {
+        "title": "4 CONTRAINDICATIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "None."
+          }
+        ]
+      },
+      "highlights": {
+        "dosageAndAdministration": {
+          "content": []
+        }
+      }
+    }
+  }
+]

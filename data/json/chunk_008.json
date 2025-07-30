@@ -1,0 +1,614 @@
+[
+  {
+    "drugName": "Verzenio",
+    "setId": "be4bc0de-0fdc-4d46-8d25-be43c79e6a06",
+    "slug": "verzenio-be4bc0d",
+    "labeler": "Eli Lilly and Company",
+    "label": {
+      "genericName": "abemaciclib",
+      "labelerName": "Eli Lilly and Company",
+      "productType": "HUMAN PRESCRIPTION DRUG LABEL",
+      "effectiveTime": "20241113",
+      "title": "Verzenio",
+      "indicationsAndUsage": {
+        "title": "1 INDICATIONS AND USAGE",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.1 Early Breast Cancer",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "VERZENIO® (abemaciclib) is indicated:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, node-positive, early breast cancer at high risk of recurrence [see Clinical Studies (14.1)]."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.2 Advanced or Metastatic Breast Cancer",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "VERZENIO (abemaciclib) is indicated:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "in combination with an aromatase inhibitor as initial endocrine-based therapy for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer.",
+                    "in combination with fulvestrant for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer with disease progression following endocrine therapy.",
+                    "as monotherapy for the treatment of adult patients with HR-positive, HER2-negative advanced or metastatic breast cancer with disease progression following endocrine therapy and prior chemotherapy in the metastatic setting."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dosageAndAdministration": {
+        "title": "2 DOSAGE AND ADMINISTRATION",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.1 Recommended Dose and Schedule",
+              "content": [
+                {
+                  "type": "list",
+                  "content": [
+                    "When used in combination with fulvestrant, tamoxifen, or an aromatase inhibitor, the recommended dose of VERZENIO is 150 mg taken orally twice daily. Refer to the Full Prescribing Information for the recommended dose of the fulvestrant, tamoxifen, or aromatase inhibitor being used.",
+                    "Pre/perimenopausal women and men treated with the combination of VERZENIO plus an aromatase inhibitor should be treated with a gonadotropin-releasing hormone agonist (GnRH) according to current clinical practice standards.",
+                    "Pre/perimenopausal women treated with the combination of VERZENIO plus fulvestrant should be treated with a GnRH according to current clinical practice standards",
+                    "When used as monotherapy, the recommended dose of VERZENIO is 200 mg taken orally twice daily.",
+                    "For early breast cancer, continue VERZENIO until completion of 2 years of treatment or until disease recurrence, or unacceptable toxicity.",
+                    "For advanced or metastatic breast cancer, continue treatment until disease progression or unacceptable toxicity."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "VERZENIO may be taken with or without food [see Clinical Pharmacology (12.3)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Instruct patients to take their doses of VERZENIO at approximately the same times every day."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "If the patient vomits or misses a dose of VERZENIO, instruct the patient to take the next dose at its scheduled time. Instruct patients to swallow VERZENIO tablets whole and not to chew, crush, or split tablets before swallowing. Instruct patients not to ingest VERZENIO tablets if broken, cracked, or otherwise not intact."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.2 Dose Modification",
+              "content": []
+            }
+          }
+        ]
+      },
+      "dosageFormsAndStrengths": {
+        "title": "3 DOSAGE FORMS AND STRENGTHS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "50 mg tablets: oval beige tablet with âLillyâ debossed on one side and â50â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "100 mg tablets: oval white to practically white tablet with âLillyâ debossed on one side and â100â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "150 mg tablets: oval yellow tablet with âLillyâ debossed on one side and â150â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "200 mg tablets: oval beige tablet with âLillyâ debossed on one side and â200â on the other side."
+          }
+        ]
+      },
+      "warningsAndPrecautions": {
+        "title": "5 WARNINGS AND PRECAUTIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.1 Diarrhea",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Severe diarrhea associated with dehydration and infection occurred in patients treated with VERZENIO."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Across four clinical trials in 3691 patients, diarrhea occurred in 81% to 90% of patients who received VERZENIO. Grade 3 diarrhea occurred in 8% to 20% of patients receiving VERZENIO [see Adverse Reactions (6.1)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Most patients experienced diarrhea during the first month of VERZENIO treatment. The median time to onset of the first diarrhea event ranged from 6 to 8 days; and the median duration of Grade 2 and Grade 3 diarrhea ranged from 6 to 11 days and 5 to 8 days, respectively. Across trials, 19% to 26% of patients with diarrhea required a VERZENIO dose interruption and 13% to 23% required a dose reduction."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Instruct patients to start antidiarrheal therapy such as loperamide at the first sign of loose stools, increase oral fluids, and notify their healthcare provider for further instructions and appropriate follow up [see Patient Counseling Information (17)]. For Grade 3 or 4 diarrhea, or diarrhea that requires hospitalization, discontinue VERZENIO until toxicity resolves to â¤Grade 1, and then resume VERZENIO at the next lower dose [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.2 Neutropenia",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Neutropenia, including febrile neutropenia and fatal neutropenic sepsis, occurred in patients treated with VERZENIO."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Across four clinical trials in 3691 patients, neutropenia occurred in a 37% to 46% of patients receiving VERZENIO. A Grade â¥3 decrease in neutrophil count (based on laboratory findings) occurred in 19% to 32% of patients receiving VERZENIO. Across trials, the median time to the first episode of Grade â¥3 neutropenia ranged from 29 days to 33 days, and the median duration of Grade â¥3 neutropenia ranged from 11 days to 16 days [see Adverse Reactions (6.1)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Febrile neutropenia has been reported in <1% of patients exposed to VERZENIO across trials. Two deaths due to neutropenic sepsis were observed in MONARCH 2. Inform patients to promptly report any episodes of fever to their healthcare provider [see Patient Counseling Information (17)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Monitor complete blood counts prior to the start of VERZENIO therapy, every 2 weeks for the first 2 months, monthly for the next 2 months, and as clinically indicated. Dose interruption, dose reduction, or delay in starting treatment cycles is recommended for patients who develop Grade 3 or 4 neutropenia [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.3 Interstitial Lung Disease (ILD) or Pneumonitis",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Severe, life-threatening, or fatal interstitial lung disease (ILD) or pneumonitis can occur in patients treated with VERZENIO and other CDK4/6 inhibitors. In VERZENIO-treated patients in early breast cancer (monarchE, N=2791), 3% of patients experienced ILD or pneumonitis of any grade: 0.4% were Grade 3 or 4 and there was one fatality (0.1%). In VERZENIO-treated patients in advanced or metastatic breast cancer (N=900) (MONARCH 1, MONARCH 2, MONARCH 3), 3.3% of VERZENIO-treated patients had ILD or pneumonitis of any grade: 0.6% had Grade 3 or 4, and 0.4% had fatal outcomes. Additional cases of ILD or pneumonitis have been observed in the postmarketing setting, with fatalities reported [see Adverse Reactions (6.2)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Monitor patients for pulmonary symptoms indicative of ILD or pneumonitis. Symptoms may include hypoxia, cough, dyspnea, or interstitial infiltrates on radiologic exams. Infectious, neoplastic, and other causes for such symptoms should be excluded by means of appropriate investigations."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Dose interruption or dose reduction is recommended for patients who develop persistent or recurrent Grade 2 ILD or pneumonitis. Permanently discontinue VERZENIO in all patients with Grade 3 or 4 ILD or pneumonitis [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.4 Hepatotoxicity",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Grade â¥3 ALT (2% to 6%) and AST (2% to 3%) were reported in patients receiving VERZENIO."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Across three clinical trials in 3559 patients (monarchE, MONARCH 2, MONARCH 3), the median time to onset of Grade â¥3 ALT increases ranged from 57 to 87 days and the median time to resolution to Grade <3 was 13 to 14 days. The median time to onset of Grade â¥3 AST increases ranged from 71 to 185 days and the median time to resolution to Grade <3 ranged from 11 to 15 days."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Monitor liver function tests (LFTs) prior to the start of VERZENIO therapy, every 2 weeks for the first 2 months, monthly for the next 2 months, and as clinically indicated. Dose interruption, dose reduction, dose discontinuation, or delay in starting treatment cycles is recommended for patients who develop persistent or recurrent Grade 2, or any Grade 3 or Grade 4 hepatic transaminase elevation [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.5 Venous Thromboembolism",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Across three clinical trials in 3559 patients (monarchE, MONARCH 2, MONARCH 3), venous thromboembolic events were reported in 2% to 5% of patients treated with VERZENIO. Venous thromboembolic events included deep vein thrombosis, pulmonary embolism, pelvic venous thrombosis, cerebral venous sinus thrombosis, subclavian and axillary vein thrombosis, and inferior vena cava thrombosis. In clinical trials, deaths due to venous thromboembolism have been reported in patients treated with VERZENIO."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "VERZENIO has not been studied in patients with early breast cancer who had a history of venous thromboembolism. Monitor patients for signs and symptoms of venous thrombosis and pulmonary embolism and treat as medically appropriate. Dose interruption is recommended for early breast cancer patients with any grade venous thromboembolic event and for advanced or metastatic breast cancer patients with a Grade 3 or 4 venous thromboembolic event [see Dosage and Administration (2.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.6 Embryo-Fetal Toxicity",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Based on findings from animal studies and the mechanism of action, VERZENIO can cause fetal harm when administered to a pregnant woman. In animal reproduction studies, administration of abemaciclib to pregnant rats during the period of organogenesis caused teratogenicity and decreased fetal weight at maternal exposures that were similar to the human clinical exposure based on area under the curve (AUC) at the maximum recommended human dose."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Advise pregnant women of the potential risk to a fetus. Advise females of reproductive potential to use effective contraception during treatment with VERZENIO and for 3 weeks after the last dose [see Use in Specific Populations (8.1, 8.3) and Clinical Pharmacology (12.1)]."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "adverseReactions": {
+        "title": "6 ADVERSE REACTIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "The following adverse reactions are discussed in greater detail in other sections of the labeling:"
+          },
+          {
+            "type": "list",
+            "content": [
+              "Diarrhea [see Warnings and Precautions (5.1)].",
+              "Neutropenia [see Warnings and Precautions (5.2)].",
+              "Interstitial Lung Disease (ILD) or Pneumonitis [see Warnings and Precautions (5.3)].",
+              "Hepatotoxicity [see Warnings and Precautions (5.4)].",
+              "Venous Thromboembolism [see Warnings and Precautions (5.5)]."
+            ]
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.1 Clinical Studies Experience",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The safety population described in the Warnings and Precautions reflect exposure to VERZENIO in 3691 patients from four clinical trials: monarchE, MONARCH 1, MONARCH 2, and MONARCH 3. The safety population includes exposure to VERZENIO as a single agent at 200 mg twice daily in 132 patients in MONARCH 1 and to VERZENIO at 150 mg twice daily in 3559 patients administered in combination with fulvestrant, tamoxifen, or an aromatase inhibitor in monarchE, MONARCH 2, and MONARCH 3. The median duration of exposure ranged from 4.5 months in MONARCH 1 to 24 months in monarchE. The most common adverse reactions (incidence â¥20%) across clinical trials were: diarrhea, neutropenia, nausea, abdominal pain, infections, fatigue, anemia, leukopenia, decreased appetite, vomiting, headache, alopecia, and thrombocytopenia."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.2 Postmarketing Experience",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The following adverse reactions have been identified during post-approval use of VERZENIO. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Respiratory disorders: Interstitial lung disease (ILD)/pneumonitis [see Warnings and Precautions (5.3)]."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "drugInteractions": {
+        "title": "7 DRUG INTERACTIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "7.1 Effect of Other Drugs on VERZENIO",
+              "content": []
+            }
+          }
+        ]
+      },
+      "clinicalPharmacology": {
+        "title": "12 CLINICAL PHARMACOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of Action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Abemaciclib is an inhibitor of cyclin-dependent kinases 4 and 6 (CDK4 and CDK6). These kinases are activated upon binding to D-cyclins. In estrogen receptor-positive (ER+) breast cancer cell lines, cyclin D1 and CDK4/6 promote phosphorylation of the retinoblastoma protein (Rb), cell cycle progression, and cell proliferation. In vitro, continuous exposure to abemaciclib inhibited Rb phosphorylation and blocked progression from G1 into S phase of the cell cycle, resulting in senescence and apoptosis. In breast cancer xenograft models, abemaciclib dosed daily without interruption as a single agent or in combination with antiestrogens resulted in reduction of tumor size."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.2 Pharmacodynamics",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.3 Pharmacokinetics",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The pharmacokinetics of abemaciclib were characterized in patients with solid tumors, including breast cancer, and in healthy subjects."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Following single and repeated twice daily dosing of 50 mg (0.3 times the approved recommended 150 mg dosage) to 200 mg of abemaciclib, the increase in plasma exposure (AUC) and Cmax was approximately dose proportional. Steady state was achieved within 5 days following repeated twice daily dosing, and the estimated geometric mean accumulation ratio was 2.3 (50% CV) and 3.2 (59% CV) based on Cmax and AUC, respectively."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "clinicalStudies": {
+        "title": "14 CLINICAL STUDIES",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.1 Early Breast Cancer",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.2 Advanced or Metastatic Breast Cancer",
+              "content": []
+            }
+          }
+        ]
+      },
+      "howSupplied": {
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "How Supplied"
+          },
+          {
+            "type": "paragraph",
+            "content": "VERZENIO 50 mg tablets are oval beige tablet with âLillyâ debossed on one side and â50â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "VERZENIO 100 mg tablet are oval white to practically white tablet with âLillyâ debossed on one side and â100â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "VERZENIO 150 mg tablets are oval yellow tablet with âLillyâ debossed on one side and â150â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "VERZENIO 200 mg tablets are oval beige tablet with âLillyâ debossed on one side and â200â on the other side."
+          },
+          {
+            "type": "paragraph",
+            "content": "VERZENIO tablets are supplied in 7-day dose pack configurations as follows:"
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "200 mg dose pack (14 tablets) â each blister pack contains 14 tablets (200 mg per tablet) (200 mg twice daily)"
+              ],
+              "rows": [
+                [
+                  "200 mg dose pack (14 tablets) â each blister pack contains 14 tablets (200 mg per tablet) (200 mg twice daily)"
+                ],
+                [
+                  "NDC 0002-6216-54"
+                ],
+                [
+                  "150 mg dose pack (14 tablets) â each blister pack contains 14 tablets (150 mg per tablet) (150 mg twice daily)"
+                ],
+                [
+                  "NDC 0002-5337-54"
+                ],
+                [
+                  "100 mg dose pack (14 tablets) â each blister pack contains 14 tablets (100 mg per tablet) (100 mg twice daily)"
+                ],
+                [
+                  "NDC 0002-4815-54"
+                ],
+                [
+                  "50 mg dose pack (14 tablets) â each blister pack contains 14 tablets (50 mg per tablet) (50 mg twice daily)"
+                ],
+                [
+                  "NDC 0002-4483-54"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "useInSpecificPopulations": {
+        "title": "8 USE IN SPECIFIC POPULATIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.1 Pregnancy",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.2 Lactation",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.3 Females and Males of Reproductive Potential",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Based on animal studies, VERZENIO can cause fetal harm when administered to a pregnant woman [see Use in Specific Populations (8.1)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.4 Pediatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The safety and effectiveness of VERZENIO have not been established in pediatric patients."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.5 Geriatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Of the 2791 VERZENIO-treated patients in monarchE, 15% were 65 years of age or older and 2.7% were 75 years of age or older."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Of the 900 patients who received VERZENIO in MONARCH 1, MONARCH 2, and MONARCH 3, 38% were 65 years of age or older and 10% were 75 years of age or older. The most common adverse reactions (â¥5%) Grade 3 or 4 in patients â¥65 years of age across MONARCH 1, 2, and 3 were: neutropenia, diarrhea, fatigue, nausea, dehydration, leukopenia, anemia, infections, and ALT increased."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "No overall differences in safety or effectiveness of VERZENIO were observed between these patients and younger patients."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.6 Renal Impairment",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "No dosage adjustment is required for patients with mild or moderate renal impairment (CLcr â¥30-89 mL/min, estimated by Cockcroft-Gault [C-G]). The pharmacokinetics of abemaciclib in patients with severe renal impairment (CLcr <30 mL/min, C-G), end stage renal disease, or in patients on dialysis is unknown [see Clinical Pharmacology (12.3)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.7 Hepatic Impairment",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "No dosage adjustments are necessary in patients with mild or moderate hepatic impairment (Child-Pugh A or B)."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Reduce the dosing frequency when administering VERZENIO to patients with severe hepatic impairment (Child-Pugh C) [see Dosage and Administration (2.2) and Clinical Pharmacology (12.3)]."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "description": {
+        "title": "11 DESCRIPTION",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Abemaciclib is a kinase inhibitor for oral administration. It is a white to yellow powder with the empirical formula C27H32F2N8 and a molecular weight 506.59."
+          },
+          {
+            "type": "paragraph",
+            "content": "The chemical name for abemaciclib is 2-Pyrimidinamine, N-[5-[(4-ethyl-1-piperazinyl)methyl]-2-pyridinyl]-5-fluoro-4-[4-fluoro-2-methyl-1-(1-methylethyl)-1H-benzimidazol-6-yl]-. Abemaciclib has the following structure:"
+          },
+          {
+            "type": "paragraph",
+            "content": "VERZENIO (abemaciclib) tablets are provided as immediate-release oval white, beige, or yellow tablets. Inactive ingredients are as follows: Excipientsâmicrocrystalline cellulose 102, microcrystalline cellulose 101, lactose monohydrate, croscarmellose sodium, sodium stearyl fumarate, silicon dioxide. Color mixture ingredientsâpolyvinyl alcohol, titanium dioxide, polyethylene glycol, talc, iron oxide yellow, and iron oxide red."
+          }
+        ]
+      },
+      "nonclinicalToxicology": {
+        "title": "13 NONCLINICAL TOXICOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Abemaciclib was assessed for carcinogenicity in a 2-year rat study. Abemaciclib was not carcinogenic in male and female rats at oral doses up to 3 mg/kg/day (approximately 1 time the exposure at the maximum recommended human dose based on AUC)."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Abemaciclib and its active human metabolites M2 and M20 were not mutagenic in a bacterial reverse mutation (Ames) assay or clastogenic in an in vitro chromosomal aberration assay in Chinese hamster ovary cells or human peripheral blood lymphocytes. Abemaciclib, M2, and M20 were not clastogenic in an in vivo rat bone marrow micronucleus assay."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Abemaciclib may impair fertility in males of reproductive potential. In repeat-dose toxicity studies up to 3-months duration, abemaciclib-related findings in the testis, epididymis, prostate, and seminal vesicle at doses â¥10 mg/kg/day in rats and â¥0.3 mg/kg/day in dogs included decreased organ weights, intratubular cellular debris, hypospermia, tubular dilatation, atrophy, and degeneration/necrosis. These doses in rats and dogs resulted in approximately 2 and 0.02 times, respectively, the exposure (AUC) in humans at the maximum recommended human dose. In a rat male fertility study, abemaciclib had no effects on mating and fertility at oral doses up to 10 mg/kg/day (approximately 2 times the exposure at the maximum recommended human dose based on AUC)."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In a rat female fertility and early embryonic development study, abemaciclib did not affect mating and fertility at doses up to 20 mg/kg/day (approximately 3 times the exposure at the maximum recommended human dose based on AUC)."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "13.2 Animal Toxicology and/or Pharmacology",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "In repeat-dose toxicity studies up to 6-months duration, oral administration of abemaciclib resulted in retinal atrophy of the eyes in mice at a dose of 150 mg/kg/day (approximately 10 times the exposure at the maximum recommended human dose based on AUC) and in rats at a dose of 30 mg/kg/day (approximately 5 times the exposure at the maximum recommended human dose based on AUC). In a 2-year rat carcinogenicity study, oral administration of abemaciclib resulted in retinal atrophy in the eyes at doses â¥0.3 mg/kg/day (approximately 0.05 times the exposure at the maximum recommended human dose based on AUC)."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "mechanismOfAction": {
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of Action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Abemaciclib is an inhibitor of cyclin-dependent kinases 4 and 6 (CDK4 and CDK6). These kinases are activated upon binding to D-cyclins. In estrogen receptor-positive (ER+) breast cancer cell lines, cyclin D1 and CDK4/6 promote phosphorylation of the retinoblastoma protein (Rb), cell cycle progression, and cell proliferation. In vitro, continuous exposure to abemaciclib inhibited Rb phosphorylation and blocked progression from G1 into S phase of the cell cycle, resulting in senescence and apoptosis. In breast cancer xenograft models, abemaciclib dosed daily without interruption as a single agent or in combination with antiestrogens resulted in reduction of tumor size."
+                }
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "Abemaciclib is an inhibitor of cyclin-dependent kinases 4 and 6 (CDK4 and CDK6). These kinases are activated upon binding to D-cyclins. In estrogen receptor-positive (ER+) breast cancer cell lines, cyclin D1 and CDK4/6 promote phosphorylation of the retinoblastoma protein (Rb), cell cycle progression, and cell proliferation. In vitro, continuous exposure to abemaciclib inhibited Rb phosphorylation and blocked progression from G1 into S phase of the cell cycle, resulting in senescence and apoptosis. In breast cancer xenograft models, abemaciclib dosed daily without interruption as a single agent or in combination with antiestrogens resulted in reduction of tumor size."
+          }
+        ]
+      },
+      "contraindications": {
+        "title": "4 CONTRAINDICATIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "None."
+          }
+        ]
+      },
+      "highlights": {
+        "dosageAndAdministration": {
+          "content": []
+        }
+      }
+    }
+  }
+]

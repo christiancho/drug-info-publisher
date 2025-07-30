@@ -1,0 +1,915 @@
+[
+  {
+    "drugName": "Olumiant",
+    "setId": "866e9f35-9035-4581-a4b1-75a621ab55cf",
+    "slug": "olumiant-866e9f3",
+    "labeler": "Eli Lilly and Company",
+    "label": {
+      "boxedWarning": {
+        "content": []
+      },
+      "genericName": "baricitinib",
+      "labelerName": "Eli Lilly and Company",
+      "productType": "HUMAN PRESCRIPTION DRUG LABEL",
+      "effectiveTime": "20241113",
+      "title": "Olumiant",
+      "indicationsAndUsage": {
+        "title": "1 INDICATIONS AND USAGE",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.1 Rheumatoid Arthritis",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT® (baricitinib) is indicated for the treatment of adult patients with moderately to severely active rheumatoid arthritis who have had an inadequate response to one or more tumor necrosis factor (TNF) blockers."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Limitations of Use: Not recommended for use in combination with other JAK inhibitors, biologic disease-modifying antirheumatic drugs (DMARDs), or with potent immunosuppressants such as azathioprine and cyclosporine."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.2 Coronavirus Disease 2019 (COVID-19)",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT is indicated for the treatment of coronavirus disease 2019 (COVID-19) in hospitalized adults requiring supplemental oxygen, non-invasive or invasive mechanical ventilation, or extracorporeal membrane oxygenation (ECMO)."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.3 Alopecia Areata",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT is indicated for the treatment of adult patients with severe alopecia areata."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Limitations of Use: Not recommended for use in combination with other JAK inhibitors, biologic immunomodulators, cyclosporine or other potent immunosuppressants."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dosageAndAdministration": {
+        "title": "2 DOSAGE AND ADMINISTRATION",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.1 Recommended Evaluations and Immunization Prior to Treatment Initiation",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Prior to OLUMIANT treatment initiation, consider performing the following evaluations:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "Active and latent tuberculosis (TB) infection evaluation â OLUMIANT should not be given to patients with active tuberculosis (TB). If latent infection is positive in patients with rheumatoid arthritis or alopecia areata, consider treatment for TB prior to OLUMIANT use [see Warnings and Precautions (5.1)].",
+                    "Viral hepatitis screening in accordance with clinical guidelines [see Warnings and Precautions (5.1)].",
+                    "Complete blood count â Assess baseline values and verify whether treatment can be initiated:-In patients with rheumatoid arthritis or alopecia areata, OLUMIANT initiation is not recommended in patients with an absolute lymphocyte count (ALC) <500 cells/Î¼l, absolute neutrophil count (ANC) <1000 cells/Î¼l, or hemoglobin level <8 g/dL.-In patients with COVID-19, OLUMIANT initiation is not recommended if the ALC is <200 cells/Î¼l or if the ANC is <500 cells/Î¼l.Monitor complete blood counts during treatment and modify dosage as recommended [see Dosage and Administration (2.5) and Warnings and Precautions (5.7)].",
+                    "Baseline hepatic and renal function â Assess baseline values and monitor patients for laboratory changes. Modify dosage based on hepatic and renal impairment, and laboratory abnormalities [see Dosage and Administration (2.5) and Warnings and Precautions (5.7)]."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In patients with rheumatoid arthritis or alopecia areata, update immunizations in agreement with current immunization guidelines [see Warnings and Precautions (5.9)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.2 Dosage Recommendations in Rheumatoid Arthritis",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The recommended dosage of OLUMIANT is 2 mg once daily orally, with or without food [see Clinical Pharmacology (12.3)]. An alternative administration for patients unable to swallow tablets may be used [see Dosage and Administration (2.8)]. OLUMIANT may be used as monotherapy or in combination with methotrexate or other non-biologic DMARDs."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.3 Dosage Recommendations in COVID-19",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The recommended dosage of OLUMIANT for adults is 4 mg once daily orally, with or without food, for 14 days or until hospital discharge, whichever occurs first. An alternative administration for patients unable to swallow tablets may be used [see Dosage and Administration (2.8)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.4 Dosage Recommendations in Alopecia Areata",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The recommended dosage of OLUMIANT is 2 mg once daily orally, with or without food. Increase to 4 mg once daily if the response to treatment is not adequate."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "For patients with nearly complete or complete scalp hair loss, with or without substantial eyelash or eyebrow hair loss, consider treating with 4 mg once daily, with or without food."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Once patients achieve an adequate response to treatment with 4 mg, decrease the dosage to 2 mg once daily."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.5 Dosage Modifications Due to Infections, Cytopenias and Anemia",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Rheumatoid Arthritis and Alopecia Areata"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "Avoid use of OLUMIANT in patients with active, serious or opportunistic infection, including localized infections. If a patient develops a serious infection hold treatment with OLUMIANT until the infection is controlled [see Warnings and Precautions (5.1)].",
+                    "Dosage modifications for patients with rheumatoid arthritis or alopecia areata and cytopenias or anemia are described in Table 1."
+                  ]
+                },
+                {
+                  "type": "table",
+                  "content": {
+                    "headers": [
+                      "Laboratory Analyte",
+                      "Laboratory Analyte Value",
+                      "Recommendation"
+                    ],
+                    "rows": [
+                      [
+                        "Laboratory Analyte",
+                        "Laboratory Analyte Value",
+                        "Recommendation"
+                      ],
+                      [
+                        "Absolute Lymphocyte Count (ALC)",
+                        "â¥500 cells/Î¼L",
+                        "Maintain dosage"
+                      ],
+                      [
+                        "<500 cells/Î¼L",
+                        "Interrupt OLUMIANT until ALC â¥500 cells/Î¼L"
+                      ],
+                      [
+                        "Absolute Neutrophil Count (ANC)",
+                        "â¥1000 cells/Î¼L",
+                        "Maintain dosage"
+                      ],
+                      [
+                        "<1000 cells/Î¼L",
+                        "Interrupt OLUMIANT until ANC â¥1000 cells/Î¼L"
+                      ],
+                      [
+                        "Hemoglobin",
+                        "â¥8 g/dL",
+                        "Maintain dosage"
+                      ],
+                      [
+                        "<8 g/dL",
+                        "Interrupt OLUMIANT until hemoglobin â¥8 g/dL"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.6 Dosage Modifications for Patients with Renal Impairment or Hepatic Impairment",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.7 Dosage Modifications Due to Drug Interactions",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.8 Alternative Administration for Patients Unable to Swallow Tablets",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "For patients who are unable to swallow whole tablets, an alternative mode of administration may be considered:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "Oral dispersion",
+                    "Gastrostomy tube (G tube)",
+                    "Nasogastric tube (NG tube) or orogastric tube (OG tube)"
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Intact tablets are not hazardous. Tablets may be crushed to facilitate dispersion. It is not known if powder from the crushed tablets may constitute a reproductive hazard to the preparer. If tablets are crushed, use proper control measures (e.g., ventilated enclosure) or personal protective equipment (i.e., N95 respirator). Dispersed tablets are stable in water for up to 4 hours."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "3 DOSAGE FORMS AND STRENGTHS",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT is available as debossed, film-coated tablets:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "1 mg tablet contains a recessed area on each face of the tablet surface, is very light pink, round, debossed with âLillyâ on one side and â1â on the other.",
+                    "2 mg tablet contains a recessed area on each face of the tablet surface, is light pink, oblong, debossed with âLillyâ on one side and â2â on the other.",
+                    "4 mg tablet contains a recessed area on each face of the tablet surface, is medium pink, round, debossed with âLillyâ on one side and â4â on the other."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dosageFormsAndStrengths": {
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "3 DOSAGE FORMS AND STRENGTHS",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT is available as debossed, film-coated tablets:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "1 mg tablet contains a recessed area on each face of the tablet surface, is very light pink, round, debossed with âLillyâ on one side and â1â on the other.",
+                    "2 mg tablet contains a recessed area on each face of the tablet surface, is light pink, oblong, debossed with âLillyâ on one side and â2â on the other.",
+                    "4 mg tablet contains a recessed area on each face of the tablet surface, is medium pink, round, debossed with âLillyâ on one side and â4â on the other."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "OLUMIANT is available as debossed, film-coated tablets:"
+          },
+          {
+            "type": "list",
+            "content": [
+              "1 mg tablet contains a recessed area on each face of the tablet surface, is very light pink, round, debossed with âLillyâ on one side and â1â on the other.",
+              "2 mg tablet contains a recessed area on each face of the tablet surface, is light pink, oblong, debossed with âLillyâ on one side and â2â on the other.",
+              "4 mg tablet contains a recessed area on each face of the tablet surface, is medium pink, round, debossed with âLillyâ on one side and â4â on the other."
+            ]
+          }
+        ]
+      },
+      "warningsAndPrecautions": {
+        "title": "5 WARNINGS AND PRECAUTIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.1 Serious Infections",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Serious and sometimes fatal infections due to bacterial, mycobacterial, invasive fungal, viral, or other opportunistic pathogens have been reported in patients with rheumatoid arthritis receiving OLUMIANT. The most common serious infections reported with OLUMIANT included pneumonia, herpes zoster, and urinary tract infection [see Adverse Reactions (6.1)]. Among opportunistic infections, tuberculosis, multidermatomal herpes zoster, esophageal candidiasis, pneumocystosis, acute histoplasmosis, cryptococcosis, cytomegalovirus, and BK virus were reported with OLUMIANT. Some patients have presented with disseminated rather than localized disease, and were often taking concomitant immunosuppressants such as methotrexate or corticosteroids."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Avoid use of OLUMIANT in patients with an active, serious infection, including localized infections. Consider the risks and benefits of treatment prior to initiating OLUMIANT in patients:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "with chronic or recurrent infection",
+                    "who have been exposed to tuberculosis",
+                    "with a history of a serious or an opportunistic infection",
+                    "who have resided or traveled in areas of endemic tuberculosis or endemic mycoses; or",
+                    "with underlying conditions that may predispose them to infection."
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In patients with rheumatoid arthritis or alopecia areata, closely monitor for the development of signs and symptoms of infection during and after treatment with OLUMIANT. Interrupt OLUMIANT in patients with rheumatoid arthritis or alopecia areata, if the patient develops a serious infection, an opportunistic infection, or sepsis. A patient who develops a new infection during treatment with OLUMIANT should undergo prompt and complete diagnostic testing appropriate for an immunocompromised patient; appropriate antimicrobial therapy should be initiated, the patient should be closely monitored, and OLUMIANT should be interrupted if the patient is not responding to therapy. Do not resume OLUMIANT until the infection is controlled."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In patients with COVID-19, monitor for signs and symptoms of new infections during and after treatment with OLUMIANT. There is limited information regarding the use of OLUMIANT in patients with COVID-19 and concomitant active serious infections. The risks and benefits of treatment with OLUMIANT in COVID-19 patients with other concurrent infections should be considered."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.2 Mortality",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "In a large, randomized, postmarketing safety study of another JAK inhibitor in RA patients 50 years of age and older with at least one cardiovascular risk factor, a higher rate of all-cause mortality, including sudden cardiovascular death, was observed in patients treated with the JAK inhibitor compared with TNF blockers. Consider the benefits and risks for the individual patient prior to initiating or continuing therapy with OLUMIANT."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.3 Malignancy and Lymphoproliferative Disorders",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Malignancies were observed in clinical studies of OLUMIANT [see Adverse Reactions (6.1)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In a large, randomized, postmarketing safety study of another JAK inhibitor in RA patients, a higher rate of malignancies (excluding non-melanoma skin cancer (NMSC)) was observed in patients treated with the JAK inhibitor compared to those treated with TNF blockers. A higher rate of lymphomas was observed in patients treated with the JAK inhibitor compared to those treated with TNF blockers. A higher rate of lung cancers was observed in current or past smokers treated with the JAK inhibitor compared to those treated with TNF blockers. In this study, current or past smokers had an additional increased risk of overall malignancies."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Consider the benefits and risks for the individual patient prior to initiating or continuing therapy with OLUMIANT, particularly in patients with a known malignancy (other than successfully treated NMSC), patients who develop a malignancy, and patients who are current or past smokers."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.4 Major Adverse Cardiovascular Events",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "In a large, randomized, postmarketing safety study of another JAK inhibitor in RA patients 50 years of age and older with at least one cardiovascular risk factor, a higher rate of major adverse cardiovascular events (MACE) defined as cardiovascular death, non-fatal myocardial infarction (MI), and non-fatal stroke was observed with the JAK inhibitor compared to those treated with TNF blockers. Patients who are current or past smokers are at additional increased risk."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Consider the benefits and risks for the individual patient prior to initiating or continuing therapy with OLUMIANT, particularly in patients who are current or past smokers and patients with other cardiovascular risk factors. Patients should be informed about the symptoms of serious cardiovascular events and the steps to take if they occur. Discontinue OLUMIANT in patients that have experienced a myocardial infarction or stroke."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.5 Thrombosis",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Thrombosis, including deep venous thrombosis (DVT) and pulmonary embolism (PE), has been observed at an increased incidence in patients treated with OLUMIANT compared to placebo. In addition, arterial thrombosis events in the extremities have been reported in clinical studies with OLUMIANT. Many of these adverse events were serious and some resulted in death. There was no clear relationship between platelet count elevations and thrombotic events. In a large, randomized, postmarketing safety study of another JAK inhibitor in RA patients 50 years of age and older with at least one cardiovascular risk factor, higher rates of overall thrombosis, DVT, and PE were observed compared to those treated with TNF blockers."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "If clinical features of DVT/PE or arterial thrombosis occur, patients should discontinue OLUMIANT and be evaluated promptly and treated appropriately. Avoid OLUMIANT in patients that may be at increased risk of thrombosis."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.6 Hypersensitivity",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Reactions such as angioedema, urticaria, and rash that may reflect drug hypersensitivity have been observed in patients receiving OLUMIANT, including serious reactions. If a serious hypersensitivity reaction occurs, promptly discontinue OLUMIANT while evaluating the potential causes of the reaction [see Adverse Reactions (6.2)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.7 Gastrointestinal Perforations",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Gastrointestinal perforations have been reported in clinical studies with OLUMIANT."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Monitor OLUMIANT-treated patients who may be at increased risk for gastrointestinal perforation (e.g., patients with a history of diverticulitis). Evaluate promptly patients presenting with new onset abdominal symptoms for early identification of gastrointestinal perforation."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.8 Laboratory Abnormalities",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.9 Vaccinations",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Avoid use of live vaccines with OLUMIANT. Update immunizations in patients with rheumatoid arthritis or alopecia areata prior to initiating OLUMIANT therapy in agreement with current immunization guidelines."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "adverseReactions": {
+        "title": "6 ADVERSE REACTIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "The following clinically significant adverse reactions are described elsewhere in the labeling:"
+          },
+          {
+            "type": "list",
+            "content": [
+              "Serious Infections [see Warnings and Precautions (5.1)]",
+              "Mortality [see Warnings and Precautions (5.2)]",
+              "Malignancy and Lymphoproliferative Disorders [see Warnings and Precautions (5.3)]",
+              "Major Adverse Cardiovascular Events [see Warnings and Precautions (5.4)]",
+              "Thrombosis [see Warnings and Precautions (5.5)]",
+              "Hypersensitivity [see Warnings and Precautions (5.6)]",
+              "Gastrointestinal Perforations [see Warnings and Precautions (5.7)]",
+              "Laboratory Abnormalities [see Warnings and Precautions (5.8)]"
+            ]
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.1 Clinical Trials Experience",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Because clinical studies are conducted under widely varying conditions, adverse reaction rates observed in the clinical studies of a drug cannot be directly compared to rates in the clinical studies of another drug and may not predict the rates observed in a broader patient population in clinical practice."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.2 Postmarketing Experience",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The following adverse reactions have been identified during post-approval use of OLUMIANT. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure:"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Immune System Disorders: Drug hypersensitivity (events such as rash, urticaria, and angioedema have been reported) [see Warnings and Precautions (5.6)]."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "drugInteractions": {
+        "title": "7 DRUG INTERACTIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "7.1 Strong OAT3 Inhibitors",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Baricitinib exposure is increased when OLUMIANT is co-administered with strong OAT3 inhibitors (such as probenecid), hence the dosage of baricitinib should be reduced by half the recommended dose [see Dosage and Administration (2.2, 2.3) and Clinical Pharmacology (12.3)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "7.2 Other JAK Inhibitors or Biologic DMARDs",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT has not been studied in combination with other JAK inhibitors or with biologic DMARDs [see Indications and Usage (1.1, 1.2)]."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "clinicalPharmacology": {
+        "title": "12 CLINICAL PHARMACOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of Action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Baricitinib is a Janus kinase (JAK) inhibitor. JAKs are intracellular enzymes which transmit signals arising from cytokine or growth factor-receptor interactions on the cellular membrane to influence cellular processes of hematopoiesis and immune cell function. Within the signaling pathway, JAKs phosphorylate and activate Signal Transducers and Activators of Transcription (STATs) which modulate intracellular activity including gene expression. Baricitinib modulates the signaling pathway at the point of JAKs, preventing the phosphorylation and activation of STATs."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "JAK enzymes transmit cytokine signaling through their pairing (e.g., JAK1/JAK2, JAK1/JAK3, JAK1/TYK2, JAK2/JAK2, JAK2/TYK2). In cell-free isolated enzyme assays, baricitinib had greater inhibitory potency at JAK1, JAK2 and TYK2 relative to JAK3. In human leukocytes, baricitinib inhibited cytokine induced STAT phosphorylation mediated by JAK1/JAK2, JAK1/JAK3, JAK1/TYK2, or JAK2/TYK2 with comparable potencies. However, the relevance of inhibition of specific JAK enzymes to therapeutic effectiveness is not currently known."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.2 Pharmacodynamics",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.3 Pharmacokinetics",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Following oral administration of OLUMIANT, peak plasma concentrations are reached approximately at 1 hour. A dose-proportional increase in systemic exposure was observed in the therapeutic dose range. The pharmacokinetics of baricitinib do not change over time. Steady-state concentrations are achieved in 2 to 3 days with minimal accumulation after once-daily administration."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "clinicalStudies": {
+        "title": "14 CLINICAL STUDIES",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.1 Rheumatoid Arthritis",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The OLUMIANT clinical development program included two dose-ranging trials and four confirmatory phase 3 trials in patients with rheumatoid arthritis (RA). Although other doses have been studied, the recommended dosage of OLUMIANT is 2 mg once daily."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.2 COVID-19",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The efficacy and safety of baricitinib were assessed in 2 Phase 3, randomized, double-blind, placebo-controlled clinical trials:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "COVID I (NCT04401579), which evaluated the combination of baricitinib 4 mg + remdesivir compared to placebo + remdesivir.",
+                    "COVID II (NCT04421027), which evaluated baricitinib 4 mg compared to placebo. Patients could remain on background therapy, as defined per local guidelines. An additional exploratory sub-study in patients requiring invasive mechanical ventilation or ECMO at baseline was also conducted under this protocol and analyzed separately."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.3 Alopecia Areata",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Two randomized, double-blind, placebo-controlled trials [Trials AA-1 (NCT03570749) and AA-2 (NCT03899259)] enrolled a total of 1200 patients, with alopecia areata (AA), who had at least 50% scalp hair loss as measured by the Severity of Alopecia Tool (SALT) for more than 6 months. The trials enrolled males 18 to 60 years of age and females 18 to 70 years of age. Among the patients enrolled, 61% were female, 2% were 65 years of age or older, and 52% were White, 36% were Asian, and 8% were Black. At baseline, 53% of patients had at least 95% scalp hair loss, 34% had their current episode lasting at least 4 years, 69% had significant gaps in eyebrow hair or no notable eyebrow hair, and 58% had significant gaps in eyelashes or no notable eyelashes."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In the Phase 3 portion of Trial AA-1 and in Trial AA-2, patients received OLUMIANT 2 mg, OLUMIANT 4 mg, or placebo once daily."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Both trials assessed the proportion of patients who achieved at least 80% scalp hair coverage (SALT score of â¤20) at Week 36 as the primary endpoint. Other outcomes at Week 36 included the proportion of patients who achieved at least 90% scalp hair coverage (SALT score of â¤10), patients with Scalp Hair Assessment PROâ¢ score of 0 or 1 with at least 2-point reduction on the 5-point scale, and assessments of eyebrow and eyelash hair loss."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "howSupplied": {
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "16.1 How Supplied",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT for oral administration is available as debossed, film-coated, tablets. Each tablet contains a recessed area on each face of the tablet surface."
+                },
+                {
+                  "type": "table",
+                  "content": {
+                    "headers": [
+                      "OLUMIANT Tablets",
+                      "1 mg",
+                      "2 mg",
+                      "4 mg"
+                    ],
+                    "rows": [
+                      [
+                        "OLUMIANT Tablets",
+                        "1 mg",
+                        "2 mg",
+                        "4 mg"
+                      ],
+                      [
+                        "Color",
+                        "Very Light Pink",
+                        "Light Pink",
+                        "Medium Pink"
+                      ],
+                      [
+                        "Shape",
+                        "Round",
+                        "Oblong",
+                        "Round"
+                      ],
+                      [
+                        "Identification",
+                        "Lilly",
+                        "Lilly",
+                        "Lilly"
+                      ],
+                      [
+                        "1",
+                        "2",
+                        "4"
+                      ],
+                      [
+                        "NDC Codes"
+                      ],
+                      [
+                        "Bottle of 30",
+                        "0002-4732-30",
+                        "0002-4182-30",
+                        "0002-4479-30"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "OLUMIANT for oral administration is available as debossed, film-coated, tablets. Each tablet contains a recessed area on each face of the tablet surface."
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "OLUMIANT Tablets",
+                "1 mg",
+                "2 mg",
+                "4 mg"
+              ],
+              "rows": [
+                [
+                  "OLUMIANT Tablets",
+                  "1 mg",
+                  "2 mg",
+                  "4 mg"
+                ],
+                [
+                  "Color",
+                  "Very Light Pink",
+                  "Light Pink",
+                  "Medium Pink"
+                ],
+                [
+                  "Shape",
+                  "Round",
+                  "Oblong",
+                  "Round"
+                ],
+                [
+                  "Identification",
+                  "Lilly",
+                  "Lilly",
+                  "Lilly"
+                ],
+                [
+                  "1",
+                  "2",
+                  "4"
+                ],
+                [
+                  "NDC Codes"
+                ],
+                [
+                  "Bottle of 30",
+                  "0002-4732-30",
+                  "0002-4182-30",
+                  "0002-4479-30"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "useInSpecificPopulations": {
+        "title": "8 USE IN SPECIFIC POPULATIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.1 Pregnancy",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.2 Lactation",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.3 Females and Males of Reproductive Potential",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.4 Pediatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The safety and effectiveness of OLUMIANT in pediatric patients have not been established."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.5 Geriatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Of the 3100 patients treated in the rheumatoid arthritis clinical trials, a total of 537 patients were 65 years of age and older, including 71 patients 75 years of age and older. Of the 2558 patients treated in the COVID-19 clinical trials, a total of 791 were 65 years of age and older, including 295 patients 75 years and older. No overall differences in safety or effectiveness were observed between these subjects and younger subjects, and other reported clinical experience has not identified differences in responses between the elderly and younger patients, but greater sensitivity of some older individuals cannot be ruled out [see Clinical Pharmacology (12.3)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Of the 1200 patients in the alopecia areata clinical trials, a total of 29 patients were 65 years of age or older. The number of patients aged 65 years and older was not sufficient to determine whether they respond differently from younger patients."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "OLUMIANT is known to be substantially excreted by the kidney, and the risk of adverse reactions to this drug may be greater in patients with impaired renal function. Because geriatric patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function [see Dosage and Administration (2.6)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.6 Hepatic Impairment",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "No dose adjustment is necessary in patients with mild or moderate hepatic impairment."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The use of OLUMIANT has not been studied in patients with rheumatoid arthritis or alopecia areata and severe hepatic impairment and is therefore not recommended. OLUMIANT has not been studied in patients with COVID-19 and severe hepatic impairment. OLUMIANT should only be used in patients with COVID-19 and severe hepatic impairment if the potential benefit outweighs the potential risk [see Dosage and Administration (2.6) and Clinical Pharmacology (12.3)]."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.7 Renal Impairment",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Renal function was found to significantly affect baricitinib exposure."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "description": {
+        "title": "11 DESCRIPTION",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "OLUMIANT (baricitinib) is a Janus kinase (JAK) inhibitor with the chemical name {1-(ethylsulfonyl)-3-[4-(7H-pyrrolo[2,3-d]pyrimidin-4-yl)-1H-pyrazol-1-yl]azetidin-3-yl}acetonitrile. Baricitinib has an empirical formula of C16H17N7O2S and a molecular weight of 371.42. Baricitinib has the following structural formula:"
+          },
+          {
+            "type": "paragraph",
+            "content": "OLUMIANT tablets contain a recessed area on each face of the tablet surface and are available for oral administration as debossed, film-coated tablets. The 1 mg tablet is very light pink, round, debossed with âLillyâ on one side and â1â on the other. The 2 mg tablet is light pink, oblong, debossed with âLillyâ on one side and â2â on the other. The 4 mg tablet is medium pink, round, debossed with âLillyâ on one side and â4â on the other."
+          },
+          {
+            "type": "paragraph",
+            "content": "Each tablet contains 1, 2, or 4 mg of baricitinib and the following inactive ingredients: croscarmellose sodium, ferric oxide, lecithin (soya), magnesium stearate, mannitol, microcrystalline cellulose, polyethylene glycol, polyvinyl alcohol, talc and titanium dioxide."
+          }
+        ]
+      },
+      "nonclinicalToxicology": {
+        "title": "13 NONCLINICAL TOXICOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The carcinogenic potential of baricitinib was evaluated in Sprague-Dawley rats and Tg.rasH2 mice. No evidence of tumorigenicity was observed in male or female rats that received baricitinib for 91 to 94 weeks at oral doses up to 8 or 25 mg/kg/day, respectively (approximately 7 and 30 times the MRHD on an AUC basis). No evidence of tumorigenicity was observed in Tg.rasH2 mice that received baricitinib for 26 weeks at oral doses up to 300 and 150 mg/kg/day in male and female mice, respectively."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Baricitinib tested negative in the following genotoxicity assays: the in vitro bacterial mutagenicity assay (Ames assay), in vitro chromosome aberration assay in human peripheral blood lymphocytes, and in vivo rat bone marrow micronucleus assay."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Fertility (achievement of pregnancy) was reduced in male and female rats that received baricitinib at oral doses of 50 and 100 mg/kg/day respectively (approximately 62 and 93 times the MRHD in males and females, respectively, on an AUC basis) based upon findings that 7 of 19 (36.8%) drug-treated females with evidence of mating were not gravid compared to 1 of 19 (5.3%) control females. It could not be determined from the study design if these findings were attributable to toxicities in one sex or both. Fertility was unaffected in male and female rats at oral doses of 15 mg/kg and 25 mg/kg, respectively (approximately 13 and 26 times the MRHD on an AUC basis). However, maintenance of pregnancy was adversely affected at these doses based upon findings of increased post-implantation losses (early resorptions) and decreased numbers of mean viable embryos per litter. The number of viable embryos was unaffected in female rats that received baricitinib at an oral dose of 5 mg/kg/day and were mated to males that received the same dose (approximately 6 times the MRHD on an AUC basis). Reproductive performance was unaffected in male and female rats that received baricitinib at oral doses up to 50 and 100 mg/kg/day respectively (approximately 62 and 93 times the MRHD in males and females, respectively, on an AUC basis)."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "mechanismOfAction": {
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of Action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Baricitinib is a Janus kinase (JAK) inhibitor. JAKs are intracellular enzymes which transmit signals arising from cytokine or growth factor-receptor interactions on the cellular membrane to influence cellular processes of hematopoiesis and immune cell function. Within the signaling pathway, JAKs phosphorylate and activate Signal Transducers and Activators of Transcription (STATs) which modulate intracellular activity including gene expression. Baricitinib modulates the signaling pathway at the point of JAKs, preventing the phosphorylation and activation of STATs."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "JAK enzymes transmit cytokine signaling through their pairing (e.g., JAK1/JAK2, JAK1/JAK3, JAK1/TYK2, JAK2/JAK2, JAK2/TYK2). In cell-free isolated enzyme assays, baricitinib had greater inhibitory potency at JAK1, JAK2 and TYK2 relative to JAK3. In human leukocytes, baricitinib inhibited cytokine induced STAT phosphorylation mediated by JAK1/JAK2, JAK1/JAK3, JAK1/TYK2, or JAK2/TYK2 with comparable potencies. However, the relevance of inhibition of specific JAK enzymes to therapeutic effectiveness is not currently known."
+                }
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "Baricitinib is a Janus kinase (JAK) inhibitor. JAKs are intracellular enzymes which transmit signals arising from cytokine or growth factor-receptor interactions on the cellular membrane to influence cellular processes of hematopoiesis and immune cell function. Within the signaling pathway, JAKs phosphorylate and activate Signal Transducers and Activators of Transcription (STATs) which modulate intracellular activity including gene expression. Baricitinib modulates the signaling pathway at the point of JAKs, preventing the phosphorylation and activation of STATs."
+          },
+          {
+            "type": "paragraph",
+            "content": "JAK enzymes transmit cytokine signaling through their pairing (e.g., JAK1/JAK2, JAK1/JAK3, JAK1/TYK2, JAK2/JAK2, JAK2/TYK2). In cell-free isolated enzyme assays, baricitinib had greater inhibitory potency at JAK1, JAK2 and TYK2 relative to JAK3. In human leukocytes, baricitinib inhibited cytokine induced STAT phosphorylation mediated by JAK1/JAK2, JAK1/JAK3, JAK1/TYK2, or JAK2/TYK2 with comparable potencies. However, the relevance of inhibition of specific JAK enzymes to therapeutic effectiveness is not currently known."
+          }
+        ]
+      },
+      "contraindications": {
+        "title": "4 CONTRAINDICATIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "None."
+          }
+        ]
+      },
+      "highlights": {
+        "dosageAndAdministration": {
+          "content": []
+        }
+      }
+    }
+  }
+]

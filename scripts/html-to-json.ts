@@ -4,39 +4,6 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { JSDOM } from 'jsdom';
 
-/**
- * Step 4: Clean text to remove invisible/weird characters but preserve medical content
- */
-function sanitizeText(text: string): string {
-  if (!text || typeof text !== 'string') {
-    return text;
-  }
-  
-  // Remove only specific problematic characters while preserving medical content
-  const cleaned = text
-    .replace(/Â/g, '') // Remove the specific Â character
-    .replace(/[\u00A0\u2000-\u200D\u2028-\u2029\u202F\u205F\u3000\uFEFF]/g, ' ') // Replace invisible/zero-width chars with space
-    .replace(/\s+/g, ' ') // Replace multiple whitespace with single space
-    .trim();
-  
-  return cleaned;
-}
-
-/**
- * Step 3: Sanitize HTML content by cleaning text between tags
- */
-function sanitizeHTMLContent(html: string): string {
-  if (!html || typeof html !== 'string') {
-    return html;
-  }
-  
-  // Use regex to find and clean text content between HTML tags
-  return html.replace(/>([^<]+)</g, (match, textContent) => {
-    const cleaned = sanitizeText(textContent);
-    return `>${cleaned}<`;
-  });
-}
-
 interface ParsedSection {
   title?: string;
   content: Array<{
@@ -59,10 +26,18 @@ interface SubsectionData {
 }
 
 /**
- * Step 2: Check if a string contains HTML
+ * Clean text content by removing extra whitespace and unwanted characters
  */
-function hasHTML(str: string): boolean {
-  return typeof str === 'string' && str.includes('<') && str.includes('>');
+function cleanText(text: string): string {
+  if (!text || typeof text !== 'string') {
+    return text;
+  }
+  
+  return text
+    .replace(/Â/g, '') // Remove specific Â character
+    .replace(/[\u00A0\u2000-\u200D\u2028-\u2029\u202F\u205F\u3000\uFEFF]/g, ' ') // Replace invisible chars
+    .replace(/\s+/g, ' ') // Replace multiple whitespace with single space
+    .trim();
 }
 
 /**
@@ -75,7 +50,7 @@ function parseTable(table: Element): TableData {
   // Extract headers
   const headerCells = table.querySelectorAll('thead tr th, tr:first-child th, tr:first-child td');
   headerCells.forEach(cell => {
-    headers.push(sanitizeText(cell.textContent || ''));
+    headers.push(cleanText(cell.textContent || ''));
   });
 
   // Extract rows
@@ -84,7 +59,7 @@ function parseTable(table: Element): TableData {
     const cells = row.querySelectorAll('td, th');
     const rowData: string[] = [];
     cells.forEach(cell => {
-      rowData.push(sanitizeText(cell.textContent || ''));
+      rowData.push(cleanText(cell.textContent || ''));
     });
     if (rowData.length > 0) {
       rows.push(rowData);
@@ -102,7 +77,7 @@ function parseList(list: Element): string[] {
   const listItems = list.querySelectorAll('li');
   
   listItems.forEach(item => {
-    const text = sanitizeText(item.textContent || '');
+    const text = cleanText(item.textContent || '');
     if (text) {
       items.push(text);
     }
@@ -115,7 +90,7 @@ function parseList(list: Element): string[] {
  * Parse subsection with nested content
  */
 function parseSubsection(section: Element): SubsectionData {
-  const title = sanitizeText(section.querySelector('h1, h2, h3, h4, h5, h6')?.textContent || '');
+  const title = cleanText(section.querySelector('h1, h2, h3, h4, h5, h6')?.textContent || '');
   const content: Array<{ type: 'paragraph' | 'list' | 'table'; content: string | string[] | TableData }> = [];
 
   // Process child elements
@@ -125,7 +100,7 @@ function parseSubsection(section: Element): SubsectionData {
       // Skip headers as they're used as titles
       continue;
     } else if (child.tagName === 'P') {
-      const text = sanitizeText(child.textContent || '');
+      const text = cleanText(child.textContent || '');
       if (text) {
         content.push({ type: 'paragraph', content: text });
       }
@@ -160,7 +135,7 @@ function parseHTMLSection(html: string): ParsedSection | null {
       return null;
     }
 
-    const title = sanitizeText(section.querySelector('h1')?.textContent || '');
+    const title = cleanText(section.querySelector('h1')?.textContent || '');
     const content: Array<{
       type: 'paragraph' | 'list' | 'table' | 'subsection';
       content: string | string[] | TableData | SubsectionData;
@@ -189,7 +164,7 @@ function parseHTMLSection(html: string): ParsedSection | null {
           content.push({ type: 'subsection', content: subsectionData });
         }
       } else if (child.tagName === 'P') {
-        const text = sanitizeText(child.textContent || '');
+        const text = cleanText(child.textContent || '');
         if (text) {
           content.push({ type: 'paragraph', content: text });
         }
@@ -218,38 +193,23 @@ function parseHTMLSection(html: string): ParsedSection | null {
 }
 
 /**
- * Step 2: Recursively process all fields to find HTML and convert to structured JSON
+ * Process all HTML fields in drug data and convert to structured JSON
  */
-function processFields(obj: any, path: string): any {
-  if (typeof obj === 'string') {
-    if (hasHTML(obj)) {
-      const fieldName = path.split('.').pop() || 'unknown';
-      console.log(`    🔧 Processing HTML field: ${fieldName} (${obj.length} chars)...`);
-      
-      // Step 3: Parse HTML into structured JSON
-      console.log(`      🔄 Converting HTML to structured JSON...`);
-      const parsedJSON = parseHTMLSection(obj);
-      
-      if (parsedJSON) {
-        console.log(`       ✅ HTML field converted to JSON structure`);
-        return parsedJSON;
-      } else {
-        console.log(`       ⚠️  HTML parsing failed, falling back to text sanitization`);
-        return sanitizeText(obj);
-      }
-    }
-    return sanitizeText(obj);
+function processHTMLFields(obj: any): any {
+  if (typeof obj === 'string' && obj.includes('<') && obj.includes('>')) {
+    // This looks like HTML, try to parse it
+    const parsed = parseHTMLSection(obj);
+    return parsed || obj; // Return parsed data or original if parsing fails
   }
   
   if (Array.isArray(obj)) {
-    return obj.map((item, i) => processFields(item, `${path}[${i}]`));
+    return obj.map(item => processHTMLFields(item));
   }
   
   if (typeof obj === 'object' && obj !== null) {
     const processedObject: any = {};
     for (const [key, value] of Object.entries(obj)) {
-      const newPath = path ? `${path}.${key}` : key;
-      processedObject[key] = processFields(value, newPath);
+      processedObject[key] = processHTMLFields(value);
     }
     return processedObject;
   }
@@ -265,20 +225,20 @@ function main() {
   
   if (!chunkNumber) {
     console.error('❌ Please provide chunk number (e.g., 001, 002, etc.)');
-    console.log('Usage: npx tsx scripts/sanitize-data.ts 001');
+    console.log('Usage: npx tsx scripts/html-to-json.ts 001');
     return;
   }
 
   // File paths
   const dataDir = path.join(process.cwd(), 'data');
+  const sanitizedDir = path.join(dataDir, 'sanitized');
   const jsonDir = path.join(dataDir, 'json');
   
   const inputFileName = `chunk_${chunkNumber}.json`;
-  const inputFile = path.join(dataDir, inputFileName);
+  const inputFile = path.join(sanitizedDir, inputFileName);
   const outputFile = path.join(jsonDir, inputFileName);
   
-  // Step 1: Read from the JSON file
-  console.log(`📖 Step 1: Reading ${inputFileName}...`);
+  console.log(`📖 Reading ${inputFileName} from sanitized directory...`);
   
   if (!fs.existsSync(inputFile)) {
     console.error(`❌ Input file not found: ${inputFile}`);
@@ -291,24 +251,15 @@ function main() {
   }
   
   const originalData = JSON.parse(fs.readFileSync(inputFile, 'utf-8'));
-  const originalSize = fs.readFileSync(inputFile, 'utf-8').length;
-  
   console.log(`  📊 ${originalData.length} drug(s) found`);
-  console.log(`  📏 Original size: ${originalSize.toLocaleString()} chars`);
   
-  // Step 2-5: Process all fields and convert HTML to JSON
-  console.log(`\n🔍 Step 2-5: Processing fields and converting HTML to structured JSON...`);
-  const processedData = processFields(originalData, 'root');
+  console.log(`\n🔄 Converting HTML to structured JSON...`);
+  const processedData = processHTMLFields(originalData);
   
-  // Step 5: Save the resulting drug info under /data/json
-  console.log(`\n💾 Step 5: Saving structured JSON data...`);
+  console.log(`\n💾 Saving structured JSON data...`);
   fs.writeFileSync(outputFile, JSON.stringify(processedData, null, 2), 'utf-8');
-  const processedSize = fs.readFileSync(outputFile, 'utf-8').length;
   
   console.log(`  ✅ Saved to ${outputFile}`);
-  console.log(`  📏 Final size: ${processedSize.toLocaleString()} chars`);
-  console.log(`  📉 Change: ${(originalSize - processedSize).toLocaleString()} chars (${((originalSize - processedSize)/originalSize*100).toFixed(1)}%)`);
-  
   console.log(`\n🎉 HTML to JSON conversion complete!`);
 }
 

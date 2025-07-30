@@ -1,0 +1,1132 @@
+[
+  {
+    "drugName": "Emgality",
+    "setId": "33a147be-233a-40e8-a55e-e40936e28db0",
+    "slug": "emgality-33a147b",
+    "labeler": "Eli Lilly and Company",
+    "label": {
+      "genericName": "galcanezumab-gnlm",
+      "labelerName": "Eli Lilly and Company",
+      "productType": "HUMAN PRESCRIPTION DRUG LABEL",
+      "effectiveTime": "20210311",
+      "title": "EMGALITY",
+      "indicationsAndUsage": {
+        "title": "1 INDICATIONS AND USAGE",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.1 Migraine",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY is indicated for the preventive treatment of migraine in adults."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "1.2 Episodic Cluster Headache",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY is indicated for the treatment of episodic cluster headache in adults."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dosageAndAdministration": {
+        "title": "2 DOSAGE AND ADMINISTRATION",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.1 Recommended Dosing for Migraine",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The recommended dosage of EMGALITY is 240 mg (two consecutive subcutaneous injections of 120 mg each) once as a loading dose, followed by monthly doses of 120 mg injected subcutaneously."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "If a dose of EMGALITY is missed, administer as soon as possible. Thereafter, EMGALITY can be scheduled monthly from the date of the last dose."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.2 Recommended Dosing for Episodic Cluster Headache",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The recommended dosage of EMGALITY is 300 mg (three consecutive subcutaneous injections of 100 mg each) at the onset of the cluster period, and then monthly until the end of the cluster period."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "If a dose of EMGALITY is missed during a cluster period, administer as soon as possible. Thereafter, EMGALITY can be scheduled monthly from the date of the last dose until the end of the cluster period."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "2.3 Important Administration Instructions",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY is for subcutaneous use only."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY is intended for patient self-administration. Prior to use, provide proper training to patients and/or caregivers on how to prepare and administer EMGALITY using the single-dose prefilled pen or single-dose prefilled syringe, including aseptic technique [see How Supplied/Storage and Handling (16.2) and Instructions for Use]:"
+                },
+                {
+                  "type": "list",
+                  "content": [
+                    "Protect EMGALITY from direct sunlight.",
+                    "Prior to subcutaneous administration, allow EMGALITY to sit at room temperature for 30 minutes. Do not warm by using a heat source such as hot water or a microwave.",
+                    "Do not shake the product.",
+                    "Inspect EMGALITY visually for particulate matter and discoloration prior to administration, whenever solution and container permit [see Dosage Forms and Strengths (3) and How Supplied/Storage and Handling (16.1)]. Do not use EMGALITY if it is cloudy or there are visible particles.",
+                    "Administer EMGALITY in the abdomen, thigh, back of the upper arm, or buttocks subcutaneously. Do not inject into areas where the skin is tender, bruised, red, or hard.",
+                    "Both the prefilled pen and prefilled syringe are single-dose and deliver the entire contents."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dosageFormsAndStrengths": {
+        "title": "3 DOSAGE FORMS AND STRENGTHS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "EMGALITY is a sterile clear to opalescent, colorless to slightly yellow to slightly brown solution available as follows:"
+          },
+          {
+            "type": "list",
+            "content": [
+              "Injection: 120 mg/mL in a single-dose prefilled pen",
+              "Injection: 120 mg/mL in a single-dose prefilled syringe",
+              "Injection: 100 mg/mL in a single-dose prefilled syringe"
+            ]
+          }
+        ]
+      },
+      "warningsAndPrecautions": {
+        "title": "5 WARNINGS AND PRECAUTIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "5.1 Hypersensitivity Reactions",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Hypersensitivity reactions, including dyspnea, urticaria, and rash, have occurred with EMGALITY in clinical studies and the postmarketing setting. Cases of anaphylaxis and angioedema have also been reported in the postmarketing setting. If a serious or severe hypersensitivity reaction occurs, discontinue administration of EMGALITY and initiate appropriate therapy [see Contraindications (4), Adverse Reactions (6.1), and Patient Counseling Information (17)]. Hypersensitivity reactions can occur days after administration and may be prolonged."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "adverseReactions": {
+        "title": "6 ADVERSE REACTIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "The following clinically significant adverse reactions are described elsewhere in the labeling:"
+          },
+          {
+            "type": "list",
+            "content": [
+              "Hypersensitivity Reactions [see Contraindications (4) and Warnings and Precautions (5.1)]"
+            ]
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.1 Clinical Trials Experience",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared with rates in clinical trials of another drug and may not reflect the rates observed in clinical practice."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.2 Immunogenicity",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "As with all therapeutic proteins, there is potential for immunogenicity. The detection of antibody formation is highly dependent on the sensitivity and specificity of the assay. Additionally, the observed incidence of antibody (including neutralizing antibody) positivity in an assay may be influenced by several factors including assay methodology, sample handling, timing of sample collection, concomitant medications, and underlying disease."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "For these reasons, comparison of the incidence of antibodies to galcanezumab-gnlm in the studies described below with the incidence of antibodies in other studies or to other products may be misleading."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The immunogenicity of EMGALITY has been evaluated using an in vitro immunoassay for the detection of binding anti-galcanezumab-gnlm antibodies. For patients whose sera tested positive in the screening immunoassay, an in vitro ligand-binding immunoassay was performed to detect neutralizing antibodies."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In controlled studies with EMGALITY up to 6 months (Study 1, Study 2, and Study 3), the incidence of anti-galcanezumab-gnlm antibody development was 4.8% (33/688) in patients receiving EMGALITY once monthly (32 out of 33 of whom had in vitro neutralizing activity). With 12 months of treatment in an open-label study, up to 12.5% (16/128) of EMGALITY-treated patients developed anti-galcanezumab-gnlm antibodies, most of whom tested positive for neutralizing antibodies."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Although anti-galcanezumab-gnlm antibody development was not found to affect the pharmacokinetics, safety or efficacy of EMGALITY in these patients, the available data are too limited to make definitive conclusions."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "6.3 Postmarketing Experience",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The following adverse reactions have been identified during post-approval use of EMGALITY. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to EMGALITY exposure."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Immune System Disordersâ Anaphylaxis, angioedema [see Contraindications (4) and Warnings and Precautions (5.1)]."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Skin and Subcutaneous Tissue Disordersâ Rash."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "clinicalPharmacology": {
+        "title": "12 CLINICAL PHARMACOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of Action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Galcanezumab-gnlm is a humanized monoclonal antibody that binds to calcitonin gene-related peptide (CGRP) ligand and blocks its binding to the receptor."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.2 Pharmacodynamics",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "There are no relevant data on the pharmacodynamic effects of galcanezumab-gnlm."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.3 Pharmacokinetics",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Galcanezumab-gnlm exhibits linear pharmacokinetics and exposure increases proportionally with doses between 1 and 600 mg."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "A loading dose of 240 mg achieved the serum galcanezumab-gnlm steady-state concentration after the first dose. A dose of 300 mg monthly would achieve steady-state concentration after the fourth dose. The time to maximum concentration is 5 days, and the elimination half-life is 27 days."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "There was no difference in pharmacokinetic parameters between healthy volunteers, patients with episodic or chronic migraine, and patients with episodic cluster headache."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "clinicalStudies": {
+        "title": "14 CLINICAL STUDIES",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.1 Migraine",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The efficacy of EMGALITY was evaluated as a preventive treatment of episodic or chronic migraine in three multicenter, randomized, double-blind, placebo-controlled studies: two 6-month studies in patients with episodic migraine (Studies 1 and 2) and one 3-month study in patients with chronic migraine (Study 3)."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "14.2 Episodic Cluster Headache",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "The efficacy of EMGALITY was evaluated for the treatment of episodic cluster headache in a randomized, 8-week, double-blind, placebo-controlled study (Study 4)."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Study 4 (NCT02397473) included adults who met the International Classification of Headache Disorders 3rd edition (beta version) diagnostic criteria for episodic cluster headache and had a maximum of 8 attacks per day, a minimum of one attack every other day, and at least 4 attacks during the prospective 7-day baseline period. All patients were randomized in a 1:1 ratio to receive once-monthly subcutaneous injections of EMGALITY 300 mg or placebo. Patients were allowed to use certain specified acute/abortive cluster headache treatments, including triptans, oxygen, acetaminophen, and NSAIDs during the study."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The study excluded patients on other treatments intended to reduce the frequency of cluster headache attacks; patients with medication overuse headache; patients with ECG abnormalities compatible with an acute cardiovascular event or conduction delay; and patients with a history of myocardial infarction, unstable angina, percutaneous coronary intervention, coronary artery bypass grafting, deep vein thrombosis, or pulmonary embolism within 6 months of screening. In addition, patients with any history of stroke, intracranial or carotid aneurysm, intracranial hemorrhage, or vasospastic angina; clinical evidence of peripheral vascular disease; or diagnosis of Raynaudâs disease were excluded."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "The primary efficacy endpoint for Study 4 was the mean change from baseline in weekly cluster headache attack frequency across Weeks 1 to 3. A secondary endpoint was the percentage of patients who achieved a response (defined as a reduction from baseline of 50% or greater in the weekly cluster headache attack frequency) at Week 3."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "In Study 4, a total of 106 patients (88 males, 18 females) ranging in age from 19 to 65 years were randomized and treated. A total of 90 patients completed the 8-week double-blind phase. In the prospective baseline phase, the mean number of weekly cluster headache attacks was 17.5, and was similar across treatment groups."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY 300 mg demonstrated statistically significant improvements for efficacy endpoints compared to placebo, as summarized in Table 4."
+                },
+                {
+                  "type": "table",
+                  "content": {
+                    "headers": [
+                      "",
+                      "EMGALITY300 mgN = 49",
+                      "PlaceboN = 57"
+                    ],
+                    "rows": [
+                      [
+                        "",
+                        "EMGALITY300 mgN = 49",
+                        "PlaceboN = 57"
+                      ],
+                      [
+                        "Mean Reduction in Weekly Cluster Headache Attack Frequency (over Weeks 1 to 3)"
+                      ],
+                      [
+                        "Prospective Baseline Cluster Headache Attack Frequency",
+                        "17.8",
+                        "17.3"
+                      ],
+                      [
+                        "Mean change from baseline",
+                        "-8.7",
+                        "-5.2"
+                      ],
+                      [
+                        "Difference from placebo",
+                        "-3.5",
+                        ""
+                      ],
+                      [
+                        "p-value",
+                        "0.036",
+                        ""
+                      ],
+                      [
+                        "â¥50% Weekly Cluster Headache Attack Frequency Responders (at Week 3)"
+                      ],
+                      [
+                        "% Responders",
+                        "71.4%",
+                        "52.6%"
+                      ],
+                      [
+                        "Difference from placebo",
+                        "18.8%",
+                        ""
+                      ],
+                      [
+                        "p-value",
+                        "0.046",
+                        ""
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Figure 7: Mean Change in Weekly Cluster Headache Attack Frequency over Weeks 1 to 3 in Study 4a"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "a Abbreviations: BL = baseline; LS = least square; SE = standard error."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Figure 8 shows the distribution of the average percent change from baseline in weekly cluster headache attack frequency across Weeks 1 to 3 in bins of 25%, by treatment group, in Study 4."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "Figure 8: Distribution of the Average Percent Change from Baseline in Weekly Cluster Headache Attack Frequency over Weeks 1 to 3 in Study 4a"
+                },
+                {
+                  "type": "paragraph",
+                  "content": "a N = number of intent to treat patients with non-missing average percentage change from baseline in weekly cluster headache attack frequency over weeks 1 to 3."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "howSupplied": {
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "16.1 How Supplied",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY (galcanezumab-gnlm) injection is a sterile, preservative-free, clear to opalescent, colorless to slightly yellow to slightly brown solution for subcutaneous administration."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY is not made with natural rubber latex."
+                },
+                {
+                  "type": "paragraph",
+                  "content": "EMGALITY is supplied as follows:"
+                },
+                {
+                  "type": "table",
+                  "content": {
+                    "headers": [
+                      "",
+                      "Pack Size",
+                      "NDC"
+                    ],
+                    "rows": [
+                      [
+                        "",
+                        "Pack Size",
+                        "NDC"
+                      ],
+                      [
+                        "Prefilled pen"
+                      ],
+                      [
+                        "120 mg/mL single-dose",
+                        "Carton of 1",
+                        "0002-1436-11"
+                      ],
+                      [
+                        "120 mg/mL single-dose",
+                        "Carton of 2",
+                        "0002-1436-27"
+                      ],
+                      [
+                        "Prefilled syringe"
+                      ],
+                      [
+                        "100 mg/mL single-dose",
+                        "Carton of 3",
+                        "0002-3115-09"
+                      ],
+                      [
+                        ""
+                      ],
+                      [
+                        "120 mg/mL single-dose",
+                        "Carton of 1",
+                        "0002-2377-11"
+                      ],
+                      [
+                        "120 mg/mL single-dose",
+                        "Carton of 2",
+                        "0002-2377-27"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "EMGALITY (galcanezumab-gnlm) injection is a sterile, preservative-free, clear to opalescent, colorless to slightly yellow to slightly brown solution for subcutaneous administration."
+          },
+          {
+            "type": "paragraph",
+            "content": "EMGALITY is not made with natural rubber latex."
+          },
+          {
+            "type": "paragraph",
+            "content": "EMGALITY is supplied as follows:"
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "",
+                "Pack Size",
+                "NDC"
+              ],
+              "rows": [
+                [
+                  "",
+                  "Pack Size",
+                  "NDC"
+                ],
+                [
+                  "Prefilled pen"
+                ],
+                [
+                  "120 mg/mL single-dose",
+                  "Carton of 1",
+                  "0002-1436-11"
+                ],
+                [
+                  "120 mg/mL single-dose",
+                  "Carton of 2",
+                  "0002-1436-27"
+                ],
+                [
+                  "Prefilled syringe"
+                ],
+                [
+                  "100 mg/mL single-dose",
+                  "Carton of 3",
+                  "0002-3115-09"
+                ],
+                [
+                  ""
+                ],
+                [
+                  "120 mg/mL single-dose",
+                  "Carton of 1",
+                  "0002-2377-11"
+                ],
+                [
+                  "120 mg/mL single-dose",
+                  "Carton of 2",
+                  "0002-2377-27"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "useInSpecificPopulations": {
+        "title": "8 USE IN SPECIFIC POPULATIONS",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.1 Pregnancy",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.2 Lactation",
+              "content": []
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.4 Pediatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Safety and effectiveness in pediatric patients have not been established."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "content": {
+              "title": "8.5 Geriatric Use",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Clinical studies of EMGALITY did not include sufficient numbers of patients aged 65 and over to determine whether they respond differently from younger patients."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "description": {
+        "title": "11 DESCRIPTION",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Galcanezumab-gnlm is a humanized IgG4 monoclonal antibody specific for calcitonin-gene related peptide (CGRP) ligand. Galcanezumab-gnlm is produced in Chinese Hamster Ovary (CHO) cells by recombinant DNA technology. Galcanezumab-gnlm is composed of two identical immunoglobulin kappa light chains and two identical immunoglobulin gamma heavy chains and has an overall molecular weight of approximately 147 kDa."
+          },
+          {
+            "type": "paragraph",
+            "content": "EMGALITY (galcanezumab-gnlm) injection is a sterile, preservative-free, clear to opalescent and colorless to slightly yellow to slightly brown solution, for subcutaneous use. EMGALITY is supplied in a 1 mL single-dose prefilled pen to deliver 120 mg of galcanezumab-gnlm or a 1 mL single-dose prefilled syringe to deliver 100 mg or 120 mg of galcanezumab-gnlm. Each mL of solution contains 100 mg or 120 mg of galcanezumab-gnlm; L-histidine (0.5 mg); L-histidine hydrochloride monohydrate (1.5 mg); Polysorbate 80 (0.5 mg); Sodium Chloride (8.8 mg); Water for Injection, USP. The pH range is 5.3 - 6.3."
+          }
+        ]
+      },
+      "nonclinicalToxicology": {
+        "title": "13 NONCLINICAL TOXICOLOGY",
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility",
+              "content": []
+            }
+          }
+        ]
+      },
+      "instructionsForUse": {
+        "content": [
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "INSTRUCTIONS FOR USE"
+              ],
+              "rows": [
+                [
+                  "INSTRUCTIONS FOR USE"
+                ],
+                [
+                  ""
+                ],
+                [
+                  "EMGALITY® (em-GAL-it-Ä)"
+                ],
+                [
+                  "(galcanezumab-gnlm)"
+                ],
+                [
+                  "injection, for subcutaneous use"
+                ],
+                [
+                  "Prefilled Syringe"
+                ],
+                [
+                  ""
+                ],
+                [
+                  "This Instructions for Use is for patients with episodic cluster headache."
+                ],
+                [
+                  "If you are using EMGALITY for preventive treatment of migraine, there is a different Instructions for Use because the dose and number of syringes needed is different."
+                ],
+                [
+                  "For subcutaneous injection only."
+                ],
+                [
+                  ""
+                ],
+                [
+                  "Before you use the EMGALITY prefilled syringe, read and carefully follow all the step-by-step instructions."
+                ],
+                [
+                  ""
+                ],
+                [
+                  "Important Information"
+                ],
+                [
+                  ""
+                ],
+                [
+                  "Your healthcare provider or nurse should show you how to prepare and inject EMGALITY using the prefilled syringe. Do not inject yourself or someone else until you have been shown how to inject EMGALITY."
+                ],
+                [
+                  "Keep this Instructions for Use and refer to it as needed."
+                ],
+                [
+                  "Each EMGALITY prefilled syringe is for one-time use only. Do not share or reuse your EMGALITY prefilled syringe. You may give or get an infection."
+                ],
+                [
+                  "Your healthcare provider may help you decide where on your body to inject your dose. You can also read the âChoose your injection siteâ section of these instructions to help you choose which area can work best for you."
+                ],
+                [
+                  "If you have vision problems, do not use EMGALITY prefilled syringe without help from a caregiver."
+                ],
+                [
+                  "See âStorage and Handling Informationâ for important storage information."
+                ]
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "INSTRUCTIONS FOR USE"
+              ],
+              "rows": [
+                [
+                  "INSTRUCTIONS FOR USE"
+                ],
+                [
+                  "Before you use the EMGALITY prefilled syringe, read and carefully follow all the step-by-step instructions."
+                ],
+                [
+                  "Parts of the EMGALITY Prefilled Syringe"
+                ],
+                [
+                  ""
+                ],
+                [
+                  ""
+                ]
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "Before You Get Started"
+              ],
+              "rows": [
+                [
+                  "Before You Get Started"
+                ],
+                [
+                  "Take the Prefilled Syringes from the refrigerator",
+                  "Take 3 EMGALITY prefilled syringes from the refrigerator."
+                ],
+                [
+                  "",
+                  "Check your prescription.EMGALITY comes as a single-dose prefilled syringe.You will need 3 prefilled syringes for each dose."
+                ],
+                [
+                  "",
+                  "Leave the needle caps on until you are ready to inject."
+                ],
+                [
+                  "",
+                  "Leave the prefilled syringes at room temperature for 30 minutes before injecting."
+                ],
+                [
+                  "",
+                  "Do not microwave the prefilled syringes, run hot water over them, or leave them in direct sunlight."
+                ],
+                [
+                  "",
+                  "Do not shake."
+                ],
+                [
+                  "Gather Supplies",
+                  "For each injection you will need: 1 alcohol wipe1 cotton ball or piece of gauze1 sharps disposal container. See âAfter You Inject Your Medicine.â"
+                ],
+                [
+                  "Inspect the Prefilled Syringe and the medicine",
+                  "Make sure you have the right medicine. The medicine inside should be clear. Its color may be colorless to slightly yellow to slightly brown."
+                ],
+                [
+                  "",
+                  "Do not use the prefilled syringe, and throw away (dispose of) as directed by your healthcare provider or pharmacist if:it looks damagedthe medicine is cloudy, is discolored, or has small particlesthe Expiration Date (Exp.) printed on the label has passedthe medicine is frozen"
+                ],
+                [
+                  "Expiration Date"
+                ],
+                [
+                  "Prepare for injection",
+                  "Wash your hands with soap and water before you inject your EMGALITY. Make sure a sharps disposal container is close by."
+                ]
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "Choose your injection site",
+                "Your healthcare provider can help you choose the injection site that is best for you."
+              ],
+              "rows": [
+                [
+                  "Choose your injection site",
+                  "Your healthcare provider can help you choose the injection site that is best for you."
+                ],
+                [
+                  "",
+                  "You may inject the medicine into your stomach area (abdomen). Do not inject within 2 inches of the belly button (navel)."
+                ],
+                [
+                  "You may inject the medicine into the front of your thighs. This area should be at least 2 inches above the knee and 2 inches below the groin."
+                ],
+                [
+                  "Another person may give you the injection in the back of your upper arm or buttocks."
+                ],
+                [
+                  "Do not inject in the exact same spot. For example, if your first injection was in your abdomen, your next injection could be in another area of your abdomen."
+                ],
+                [
+                  "Do not inject into areas where the skin is tender, bruised, red, or hard."
+                ],
+                [
+                  "Clean your injection site with an alcohol wipe. Let the injection site dry before you inject."
+                ]
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "1",
+                "Uncap",
+                ""
+              ],
+              "rows": [
+                [
+                  "1",
+                  "Uncap",
+                  ""
+                ],
+                [
+                  "Leave the needle cap on until you are ready to inject."
+                ],
+                [
+                  "Pull the needle cap off and throw it away in your household trash."
+                ],
+                [
+                  "Do not put the needle cap back on. You could damage the needle or stick yourself by accident."
+                ],
+                [
+                  "Do not touch the needle."
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "2",
+                  "Insert",
+                  ""
+                ],
+                [
+                  "",
+                  "Gently pinch and hold a fold of skin where you will inject."
+                ],
+                [
+                  "",
+                  "Insert the needle at a 45-degree angle."
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "3",
+                  "Inject",
+                  ""
+                ],
+                [
+                  "Slowly push on the thumb pad to push the plunger all the way in until all the medicine is injected.The gray syringe plunger should be pushed all the way to the needle end of the syringe."
+                ],
+                [
+                  ""
+                ],
+                [
+                  "You should see the coral plunger rod show through the syringe body when the injection is complete as shown.Remove the needle from your skin and gently let go of your skin.If you have bleeding at the injection site, press a cotton ball or gauze over the injection site. Do not rub the injection site.Do not put the needle cap back on the prefilled syringe.",
+                  ""
+                ],
+                [
+                  ""
+                ],
+                [
+                  ""
+                ],
+                [
+                  "After You Inject Your Medicine"
+                ],
+                [
+                  ""
+                ],
+                [
+                  "Throw away the used prefilled syringe"
+                ],
+                [
+                  "Put the used EMGALITY prefilled syringe in an FDA-cleared sharps disposal container right away after use. Do not throw away (dispose of) the EMGALITY prefilled syringe in your household trash.",
+                  ""
+                ],
+                [
+                  "If you do not have an FDA-cleared sharps disposal container, you may use a household container that is:"
+                ],
+                [
+                  "",
+                  "âmade of a heavy-duty plastic,"
+                ],
+                [
+                  "",
+                  "âcan be closed with a tight-fitting, puncture-resistant lid, without sharps being able to come out,"
+                ],
+                [
+                  "",
+                  "âupright and stable during use,"
+                ],
+                [
+                  "",
+                  "âleak-resistant, and"
+                ],
+                [
+                  "",
+                  "âproperly labeled to warn of hazardous waste inside the container."
+                ],
+                [
+                  "When your sharps disposal container is almost full, you will need to follow your community guidelines for the right way to dispose of your sharps disposal container. There may be state or local laws about how you should throw away needles and syringes. For more information about safe sharps disposal, and for specific information about sharps disposal in the state you live in, go to the FDA's website at: http://www.fda.gov/safesharpsdisposal."
+                ],
+                [
+                  "Do not recycle your used sharps disposal container."
+                ],
+                [
+                  "For each of the 3 injections, repeat all instructions with a new prefilled syringe."
+                ]
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "Commonly Asked Questions"
+              ],
+              "rows": [
+                [
+                  "Commonly Asked Questions"
+                ],
+                [
+                  ""
+                ],
+                [
+                  "Q.",
+                  "What if I see air bubbles in my EMGALITY prefilled syringe?"
+                ],
+                [
+                  "A.",
+                  "It is normal to have air bubbles in the prefilled syringe. EMGALITY is injected under your skin (subcutaneous injection), so these air bubbles will not harm you."
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "Q.",
+                  "What if there is a drop of liquid on the tip of the needle when I remove the needle cap?"
+                ],
+                [
+                  "A.",
+                  "It is okay to see a drop of liquid on the tip of the needle."
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "Q.",
+                  "What if I cannot push in the plunger?"
+                ],
+                [
+                  "A.",
+                  "If the plunger is stuck or damaged:"
+                ],
+                [
+                  "",
+                  "Do not continue to use the syringe"
+                ],
+                [
+                  "",
+                  "Remove the needle from your skin"
+                ],
+                [
+                  "",
+                  "Dispose of the syringe and get a new one"
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "Q.",
+                  "What if there is a drop of liquid or blood on my skin after my injection?"
+                ],
+                [
+                  "A.",
+                  "This is normal. Press a cotton ball or gauze over the injection site. Do not rub the injection site."
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "Q.",
+                  "How can I tell if my injection is complete?"
+                ],
+                [
+                  "A.",
+                  "When your injection is complete:"
+                ],
+                [
+                  "",
+                  "The coral plunger rod should show through the body of the syringe."
+                ],
+                [
+                  "",
+                  "The gray syringe plunger should be pushed all the way to the needle end of the syringe."
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "If you have more questions about how to use the EMGALITY prefilled syringe:"
+                ],
+                [
+                  "",
+                  "Call your healthcare provider",
+                  ""
+                ],
+                [
+                  "",
+                  "Call 1-833-EMGALITY (1-833-364-2548)"
+                ],
+                [
+                  "",
+                  "Visit www.emgality.com"
+                ]
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "Storage and Handling Information",
+                ""
+              ],
+              "rows": [
+                [
+                  "Storage and Handling Information",
+                  ""
+                ],
+                [
+                  "Store your prefilled syringes in the refrigerator between 36ºF to 46ºF (2ºC to 8ºC)."
+                ],
+                [
+                  "Your prefilled syringes may be stored out of the refrigerator in the original carton at temperatures up to 86ºF (30ºC) for up to 7 days. After storing out of the refrigerator, do not place EMGALITY back in the refrigerator."
+                ],
+                [
+                  "Do not freeze your prefilled syringes."
+                ],
+                [
+                  "Keep your prefilled syringes in the carton they come in to protect them from light until time of use."
+                ],
+                [
+                  "Do not shake your prefilled syringes."
+                ],
+                [
+                  "Throw away your prefilled syringes if any of the above conditions are not followed."
+                ],
+                [
+                  "Keep your prefilled syringes and all medicines out of the reach of children."
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "Read the full Prescribing Information and Patient Information for EMGALITY inside this box to learn more about your medicine."
+                ]
+              ]
+            }
+          },
+          {
+            "type": "table",
+            "content": {
+              "headers": [
+                "This Instructions for Use has been approved by the U.S. Food and Drug Administration."
+              ],
+              "rows": [
+                [
+                  "This Instructions for Use has been approved by the U.S. Food and Drug Administration."
+                ],
+                [
+                  "Eli Lilly and Company"
+                ],
+                [
+                  "Indianapolis, IN 46285, USA"
+                ],
+                [
+                  "US License Number 1891"
+                ],
+                [
+                  "EMGALITY® is a registered trademark of Eli Lilly and Company."
+                ],
+                [
+                  "Copyright © 2019, Eli Lilly and Company. All rights reserved."
+                ],
+                [
+                  "Issued: 06/2019"
+                ],
+                [
+                  "EMG-0001-PFS-100MG-IFU-20190604"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "mechanismOfAction": {
+        "content": [
+          {
+            "type": "subsection",
+            "content": {
+              "title": "12.1 Mechanism of Action",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": "Galcanezumab-gnlm is a humanized monoclonal antibody that binds to calcitonin gene-related peptide (CGRP) ligand and blocks its binding to the receptor."
+                }
+              ]
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": "Galcanezumab-gnlm is a humanized monoclonal antibody that binds to calcitonin gene-related peptide (CGRP) ligand and blocks its binding to the receptor."
+          }
+        ]
+      },
+      "contraindications": {
+        "title": "4 CONTRAINDICATIONS",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "EMGALITY is contraindicated in patients with serious hypersensitivity to galcanezumab-gnlm or to any of the excipients [see Warnings and Precautions (5.1)]."
+          }
+        ]
+      },
+      "highlights": {
+        "dosageAndAdministration": {
+          "content": []
+        }
+      }
+    }
+  }
+]

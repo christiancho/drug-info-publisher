@@ -7,9 +7,26 @@ import { parseDrug } from '../functions/src/parseDrug';
 import { sanitizeString } from '../functions/src/sanitizeString';
 
 /**
- * Recursively sanitize all "content" keys in an object
+ * Clean up slug by removing the last string and hyphen
+ * "emgality-33a147b" -> "emgality"
  */
-function sanitizeContentKeys(obj: any): any {
+export function cleanSlug(slug: string): string {
+  if (!slug || typeof slug !== 'string') {
+    return slug;
+  }
+  
+  const lastHyphenIndex = slug.lastIndexOf('-');
+  if (lastHyphenIndex === -1) {
+    return slug; // No hyphen found, return as-is
+  }
+  
+  return slug.substring(0, lastHyphenIndex);
+}
+
+/**
+ * Recursively sanitize all "content" keys and clean slugs in an object
+ */
+export function sanitizeContentKeys(obj: any): any {
   if (obj === null || obj === undefined) {
     return obj;
   }
@@ -23,6 +40,8 @@ function sanitizeContentKeys(obj: any): any {
     for (const [key, value] of Object.entries(obj)) {
       if (key === 'content' && typeof value === 'string') {
         result[key] = sanitizeString(value);
+      } else if (key === 'slug' && typeof value === 'string') {
+        result[key] = cleanSlug(value);
       } else {
         result[key] = sanitizeContentKeys(value);
       }

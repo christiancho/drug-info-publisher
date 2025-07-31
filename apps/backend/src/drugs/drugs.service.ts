@@ -2,6 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Like } from 'typeorm';
 import { Drug } from './entities/drug.entity';
+import { DrugContent } from './entities/drug-content.entity';
 import { CreateDrugDto } from './dto/create-drug.dto';
 import { UpdateDrugDto } from './dto/update-drug.dto';
 import * as fs from 'fs';
@@ -12,6 +13,8 @@ export class DrugsService {
   constructor(
     @InjectRepository(Drug)
     private drugsRepository: Repository<Drug>,
+    @InjectRepository(DrugContent)
+    private drugContentRepository: Repository<DrugContent>,
   ) {}
 
   async create(createDrugDto: CreateDrugDto): Promise<Drug> {
@@ -23,10 +26,11 @@ export class DrugsService {
     const query = this.drugsRepository.createQueryBuilder('drug');
 
     if (search) {
-      query.where(
-        'drug.drugName ILIKE :search OR drug.genericName ILIKE :search OR drug.indicationsAndUsage ILIKE :search',
-        { search: `%${search}%` }
-      );
+      query.leftJoin('drug.content', 'content')
+        .where(
+          'drug.drugName ILIKE :search OR content.genericName ILIKE :search',
+          { search: `%${search}%` }
+        );
     }
 
     query.take(limit).skip(offset);
@@ -37,7 +41,10 @@ export class DrugsService {
   }
 
   async findOne(id: string): Promise<Drug> {
-    const drug = await this.drugsRepository.findOne({ where: { id } });
+    const drug = await this.drugsRepository.findOne({ 
+      where: { id },
+      relations: ['content']
+    });
     if (!drug) {
       throw new NotFoundException(`Drug with ID ${id} not found`);
     }
@@ -45,7 +52,10 @@ export class DrugsService {
   }
 
   async findBySlug(slug: string): Promise<Drug> {
-    const drug = await this.drugsRepository.findOne({ where: { slug } });
+    const drug = await this.drugsRepository.findOne({ 
+      where: { slug },
+      relations: ['content']
+    });
     if (!drug) {
       throw new NotFoundException(`Drug with slug ${slug} not found`);
     }
@@ -60,6 +70,17 @@ export class DrugsService {
 
   async remove(id: string): Promise<void> {
     const drug = await this.findOne(id);
+    await this.drugsRepository.remove(drug);
+  }
+
+  async updateBySlug(slug: string, updateDrugDto: UpdateDrugDto): Promise<Drug> {
+    const drug = await this.findBySlug(slug);
+    Object.assign(drug, updateDrugDto);
+    return this.drugsRepository.save(drug);
+  }
+
+  async removeBySlug(slug: string): Promise<void> {
+    const drug = await this.findBySlug(slug);
     await this.drugsRepository.remove(drug);
   }
 

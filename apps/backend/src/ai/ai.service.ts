@@ -54,7 +54,11 @@ export class AiService {
         ],
       });
 
-      const sanitizedText = response.content[0].text.trim();
+      const content = response.content[0];
+      if (content.type !== 'text') {
+        throw new Error('Unexpected response type from Claude API');
+      }
+      const sanitizedText = content.text.trim();
       
       this.logger.log(`Sanitized text: ${text.length} → ${sanitizedText.length} characters`);
       return sanitizedText;
@@ -88,7 +92,11 @@ export class AiService {
         ],
       });
 
-      return this.parseAIResponse(response.content[0].text);
+      const content = response.content[0];
+      if (content.type !== 'text') {
+        throw new Error('Unexpected response type from Claude API');
+      }
+      return this.parseAIResponse(content.text);
     } catch (error) {
       this.logger.error('Failed to enhance drug content with AI', error);
       throw new Error('AI content enhancement failed');
@@ -115,7 +123,11 @@ export class AiService {
         messages: [{ role: 'user', content: prompt }],
       });
 
-      return response.content[0].text.trim();
+      const content = response.content[0];
+      if (content.type !== 'text') {
+        throw new Error('Unexpected response type from Claude API');
+      }
+      return content.text.trim();
     } catch (error) {
       this.logger.error('Failed to generate SEO title', error);
       return `${drugName} - Drug Information`;
@@ -132,8 +144,8 @@ export class AiService {
 
     try {
       const prompt = `Generate an SEO-optimized meta description (under 160 characters) for ${drug.drugName}.
-      Generic name: ${drug.genericName || 'N/A'}
-      Key indications: ${this.stripHtml(drug.indicationsAndUsage?.substring(0, 300) || '')}
+      Generic name: ${drug.content?.genericName || 'N/A'}
+      Key indications: ${this.stripHtml(drug.content?.indicationsAndUsage?.substring(0, 300) || '')}
       
       The description should be informative for healthcare professionals and include key therapeutic uses.
       Format: Just return the meta description, nothing else.`;
@@ -144,7 +156,11 @@ export class AiService {
         messages: [{ role: 'user', content: prompt }],
       });
 
-      return response.content[0].text.trim();
+      const content = response.content[0];
+      if (content.type !== 'text') {
+        throw new Error('Unexpected response type from Claude API');
+      }
+      return content.text.trim();
     } catch (error) {
       this.logger.error('Failed to generate meta description', error);
       return `Comprehensive information about ${drug.drugName} including dosage, side effects, and clinical uses.`;
@@ -183,13 +199,13 @@ ${text}`;
   private buildEnhancementPrompt(drug: Drug): string {
     return `As a medical information expert, analyze this FDA drug label data and provide enhanced content for healthcare professionals.
 
-Drug: ${drug.drugName} (${drug.genericName || 'Generic name not specified'})
+Drug: ${drug.drugName} (${drug.content?.genericName || 'Generic name not specified'})
 
 FDA Label Information:
-- Indications: ${this.stripHtml(drug.indicationsAndUsage?.substring(0, 500) || 'Not specified')}
-- Dosage: ${this.stripHtml(drug.dosageAndAdministration?.substring(0, 500) || 'Not specified')}
-- Warnings: ${this.stripHtml(drug.warningsAndPrecautions?.substring(0, 500) || 'Not specified')}
-- Mechanism: ${this.stripHtml(drug.mechanismOfAction?.substring(0, 300) || 'Not specified')}
+- Indications: ${this.stripHtml(drug.content?.indicationsAndUsage?.substring(0, 500) || 'Not specified')}
+- Dosage: ${this.stripHtml(drug.content?.dosageAndAdministration?.substring(0, 500) || 'Not specified')}
+- Warnings: ${this.stripHtml(drug.content?.warningsAndPrecautions?.substring(0, 500) || 'Not specified')}
+- Mechanism: ${this.stripHtml(drug.content?.mechanismOfAction?.substring(0, 300) || 'Not specified')}
 
 Please provide:
 

@@ -1,87 +1,28 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, OneToOne } from 'typeorm';
+import { Exclude, Transform } from 'class-transformer';
+import { DrugContent } from './drug-content.entity';
 
 @Entity('drugs')
 export class Drug {
   @PrimaryGeneratedColumn('uuid')
+  @Exclude()
   id: string;
 
   @Column()
   drugName: string;
 
   @Column()
+  @Exclude()
   setId: string;
 
-  @Column()
+  @Column({ unique: true })
   slug: string;
 
   @Column()
   labeler: string;
 
-  @Column({ nullable: true })
-  genericName: string;
-
-  @Column({ nullable: true })
-  labelerName: string;
-
-  @Column({ nullable: true })
-  productType: string;
-
-  @Column({ nullable: true })
-  effectiveTime: string;
-
-  @Column({ nullable: true })
-  title: string;
-
-  @Column('jsonb', { nullable: true })
-  indicationsAndUsage: any;
-
-  @Column('jsonb', { nullable: true })
-  dosageAndAdministration: any;
-
-  @Column('jsonb', { nullable: true })
-  dosageFormsAndStrengths: any;
-
-  @Column('jsonb', { nullable: true })
-  contraindications: any;
-
-  @Column('jsonb', { nullable: true })
-  warningsAndPrecautions: any;
-
-  @Column('jsonb', { nullable: true })
-  adverseReactions: any;
-
-  @Column('jsonb', { nullable: true })
-  clinicalPharmacology: any;
-
-  @Column('jsonb', { nullable: true })
-  clinicalStudies: any;
-
-  @Column('jsonb', { nullable: true })
-  mechanismOfAction: any;
-
-  @Column('jsonb', { nullable: true })
-  boxedWarning: any;
-
-  @Column('jsonb', { nullable: true })
-  highlights: any;
-
-  @Column('jsonb', { nullable: true })
-  description: any;
-
-  @Column('jsonb', { nullable: true })
-  howSupplied: any;
-
-  @Column('jsonb', { nullable: true })
-  instructionsForUse: any;
-
-  @Column('jsonb', { nullable: true })
-  nonclinicalToxicology: any;
-
-  @Column('jsonb', { nullable: true })
-  useInSpecificPopulations: any;
-
-  @Column('jsonb', { nullable: true })
-  drugInteractions: any;
+  @OneToOne(() => DrugContent, content => content.drug, { cascade: true })
+  content: DrugContent;
 
   @CreateDateColumn()
   createdAt: Date;

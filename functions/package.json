@@ -4,6 +4,7 @@
   "type": "module",
   "dependencies": {
     "himalaya": "^1.1.0",
+    "html-tags": "^5.0.0",
     "is-html": "^2.0.0"
   }
 }

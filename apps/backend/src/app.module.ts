@@ -3,7 +3,8 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DrugsModule } from './drugs/drugs.module';
 import { AiModule } from './ai/ai.module';
-import { McpModule } from './mcp/mcp.module';
+import { Drug } from './drugs/entities/drug.entity';
+import { DrugContent } from './drugs/entities/drug-content.entity';
 
 @Module({
   imports: [
@@ -17,12 +18,11 @@ import { McpModule } from './mcp/mcp.module';
       username: process.env.DB_USER || 'prescriberpoint',
       password: process.env.DB_PASSWORD || 'password',
       database: process.env.DB_NAME || 'prescriberpoint',
-      autoLoadEntities: true,
+      entities: [Drug, DrugContent],
       synchronize: true, // Set to false in production
     }),
     DrugsModule,
     AiModule,
-    McpModule,
   ],
 })
 export class AppModule {}

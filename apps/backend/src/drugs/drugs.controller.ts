@@ -25,42 +25,36 @@ export class DrugsController {
   @ApiResponse({ status: 200, description: 'Drugs retrieved successfully' })
   findAll(
     @Query('search') search?: string,
-    @Query('limit') limit: number = 20,
-    @Query('offset') offset: number = 0,
+    @Query('limit') limitParam?: string,
+    @Query('offset') offsetParam?: string,
   ) {
+    const limit = limitParam ? parseInt(limitParam, 10) : 20;
+    const offset = offsetParam ? parseInt(offsetParam, 10) : 0;
     return this.drugsService.findAll(search, limit, offset);
   }
 
-  @Get('slug/:slug')
+  @Get(':slug')
   @ApiOperation({ summary: 'Get drug by slug' })
   @ApiResponse({ status: 200, description: 'Drug found', type: Drug })
   @ApiResponse({ status: 404, description: 'Drug not found' })
-  findBySlug(@Param('slug') slug: string): Promise<Drug> {
+  findOne(@Param('slug') slug: string): Promise<Drug> {
     return this.drugsService.findBySlug(slug);
   }
 
-  @Get(':id')
-  @ApiOperation({ summary: 'Get drug by ID' })
-  @ApiResponse({ status: 200, description: 'Drug found', type: Drug })
-  @ApiResponse({ status: 404, description: 'Drug not found' })
-  findOne(@Param('id') id: string): Promise<Drug> {
-    return this.drugsService.findOne(id);
-  }
-
-  @Patch(':id')
-  @ApiOperation({ summary: 'Update drug by ID' })
+  @Patch(':slug')
+  @ApiOperation({ summary: 'Update drug by slug' })
   @ApiResponse({ status: 200, description: 'Drug updated successfully', type: Drug })
   @ApiResponse({ status: 404, description: 'Drug not found' })
-  update(@Param('id') id: string, @Body() updateDrugDto: UpdateDrugDto): Promise<Drug> {
-    return this.drugsService.update(id, updateDrugDto);
+  update(@Param('slug') slug: string, @Body() updateDrugDto: UpdateDrugDto): Promise<Drug> {
+    return this.drugsService.updateBySlug(slug, updateDrugDto);
   }
 
-  @Delete(':id')
-  @ApiOperation({ summary: 'Delete drug by ID' })
+  @Delete(':slug')
+  @ApiOperation({ summary: 'Delete drug by slug' })
   @ApiResponse({ status: 200, description: 'Drug deleted successfully' })
   @ApiResponse({ status: 404, description: 'Drug not found' })
-  remove(@Param('id') id: string): Promise<void> {
-    return this.drugsService.remove(id);
+  remove(@Param('slug') slug: string): Promise<void> {
+    return this.drugsService.removeBySlug(slug);
   }
 
   @Post('load-data')

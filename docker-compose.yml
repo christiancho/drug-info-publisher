@@ -41,20 +41,19 @@ services:
 
   frontend:
     build:
-      context: .
-      dockerfile: ./apps/frontend/Dockerfile
+      context: ./apps/frontend
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=development
       - NEXT_PUBLIC_API_URL=http://localhost:3001
     volumes:
-      - ./apps/frontend:/app/apps/frontend
+      - ./apps/frontend:/app
       - /app/node_modules
       - /app/.next
     depends_on:
       - backend
-    command: yarn dev
 
 volumes:
   postgres_data:

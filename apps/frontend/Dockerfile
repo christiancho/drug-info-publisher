@@ -4,12 +4,12 @@ WORKDIR /app
 
 RUN corepack enable
 
-COPY yarn.lock package.json ./
-COPY apps/frontend/package.json ./apps/frontend/
+# Copy package files
+COPY package.json yarn.lock* ./
 RUN yarn install
 
-COPY apps/frontend ./apps/frontend
-WORKDIR /app/apps/frontend
+# Copy application code
+COPY . .
 
 EXPOSE 3000
 

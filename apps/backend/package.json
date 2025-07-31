@@ -1,8 +1,8 @@
 {
-  "name": "@prescriberpoint/backend",
+  "name": "@drug-info/backend",
   "version": "1.0.0",
   "description": "NestJS backend for PrescriberPoint drug information platform",
-  "main": "dist/main.js",
+  "main": "src/main.ts",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

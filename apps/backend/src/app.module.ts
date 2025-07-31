@@ -5,6 +5,7 @@ import { DrugsModule } from './drugs/drugs.module';
 import { AiModule } from './ai/ai.module';
 import { Drug } from './drugs/entities/drug.entity';
 import { DrugContent } from './drugs/entities/drug-content.entity';
+import { AiSeoDrugContent } from './drugs/entities/ai-seo-drug-content.entity';
 
 @Module({
   imports: [
@@ -18,7 +19,7 @@ import { DrugContent } from './drugs/entities/drug-content.entity';
       username: process.env.DB_USER || 'prescriberpoint',
       password: process.env.DB_PASSWORD || 'password',
       database: process.env.DB_NAME || 'prescriberpoint',
-      entities: [Drug, DrugContent],
+      entities: [Drug, DrugContent, AiSeoDrugContent],
       synchronize: true, // Set to false in production
     }),
     DrugsModule,

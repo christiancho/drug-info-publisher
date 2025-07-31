@@ -63,4 +63,12 @@ export class DrugsController {
   loadData() {
     return this.drugsService.loadDataFromJson();
   }
+
+  @Post(':slug/generate-seo')
+  @ApiOperation({ summary: 'Generate SEO content for a drug using AI' })
+  @ApiResponse({ status: 201, description: 'SEO content generated successfully' })
+  @ApiResponse({ status: 404, description: 'Drug not found' })
+  generateSeo(@Param('slug') slug: string) {
+    return this.drugsService.generateSeoContent(slug);
+  }
 }

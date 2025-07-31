@@ -3,8 +3,10 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, Like } from 'typeorm';
 import { Drug } from './entities/drug.entity';
 import { DrugContent } from './entities/drug-content.entity';
+import { AiSeoDrugContent } from './entities/ai-seo-drug-content.entity';
 import { CreateDrugDto } from './dto/create-drug.dto';
 import { UpdateDrugDto } from './dto/update-drug.dto';
+import { AiService } from '../ai/ai.service';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -15,6 +17,9 @@ export class DrugsService {
     private drugsRepository: Repository<Drug>,
     @InjectRepository(DrugContent)
     private drugContentRepository: Repository<DrugContent>,
+    @InjectRepository(AiSeoDrugContent)
+    private aiSeoDrugContentRepository: Repository<AiSeoDrugContent>,
+    private aiService: AiService,
   ) {}
 
   async create(createDrugDto: CreateDrugDto): Promise<Drug> {
@@ -54,11 +59,17 @@ export class DrugsService {
   async findBySlug(slug: string): Promise<Drug> {
     const drug = await this.drugsRepository.findOne({ 
       where: { slug },
-      relations: ['content']
+      relations: ['content', 'aiSeoContents']
     });
     if (!drug) {
       throw new NotFoundException(`Drug with slug ${slug} not found`);
     }
+    
+    // Filter to only include active AI SEO content
+    if (drug.aiSeoContents) {
+      drug.aiSeoContents = drug.aiSeoContents.filter(content => content.active);
+    }
+    
     return drug;
   }
 
@@ -143,5 +154,63 @@ export class DrugsService {
       boxedWarning: label.boxedWarning,
       highlights: typeof label.highlights === 'object' ? JSON.stringify(label.highlights) : label.highlights,
     };
+  }
+
+  async generateSeoContent(slug: string): Promise<AiSeoDrugContent> {
+    // Find the drug with its content
+    const drug = await this.drugsRepository.findOne({
+      where: { slug },
+      relations: ['content', 'aiSeoContents']
+    });
+
+    if (!drug) {
+      throw new NotFoundException(`Drug with slug ${slug} not found`);
+    }
+
+    // Deactivate any existing active SEO content for this drug
+    await this.aiSeoDrugContentRepository.update(
+      { drugId: drug.id, active: true },
+      { active: false }
+    );
+
+    // Generate SEO content using AI
+    const title = await this.aiService.generateSEOTitle(
+      drug.drugName,
+      this.extractTextFromContent(drug.content?.indicationsAndUsage)
+    );
+
+    const metaDescription = await this.aiService.generateMetaDescription(drug);
+
+    // Create new AI SEO content record
+    const aiSeoContent = this.aiSeoDrugContentRepository.create({
+      drugId: drug.id,
+      title,
+      metaDescription,
+      active: true
+    });
+
+    return this.aiSeoDrugContentRepository.save(aiSeoContent);
+  }
+
+  private extractTextFromContent(content: any): string {
+    if (!content) return '';
+    
+    if (typeof content === 'string') {
+      return content;
+    }
+    
+    if (Array.isArray(content)) {
+      return content.map(item => this.extractTextFromContent(item)).join(' ');
+    }
+    
+    if (typeof content === 'object' && content.children) {
+      return this.extractTextFromContent(content.children);
+    }
+    
+    if (typeof content === 'object' && content.content) {
+      return content.content;
+    }
+    
+    return '';
   }
 }

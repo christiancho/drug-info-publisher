@@ -1,6 +1,8 @@
 /* PrescriberPoint Custom Styles */
 html, body {
   background-color: #f7fafc;
+  padding: 0;
+  margin: 0;
 }
 
 .prescriber-point-header {

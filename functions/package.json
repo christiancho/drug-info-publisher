@@ -1,5 +1,5 @@
 {
-  "name": "functions",
+  "name": "@drug-info/functions",
   "version": "1.0.0",
   "type": "module",
   "dependencies": {

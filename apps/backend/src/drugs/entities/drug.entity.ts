@@ -1,6 +1,7 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, OneToOne } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, OneToOne, OneToMany } from 'typeorm';
 import { Exclude, Transform } from 'class-transformer';
 import { DrugContent } from './drug-content.entity';
+import { AiSeoDrugContent } from './ai-seo-drug-content.entity';
 
 @Entity('drugs')
 export class Drug {
@@ -23,6 +24,9 @@ export class Drug {
 
   @OneToOne(() => DrugContent, content => content.drug, { cascade: true })
   content: DrugContent;
+
+  @OneToMany(() => AiSeoDrugContent, aiSeoContent => aiSeoContent.drug, { cascade: true })
+  aiSeoContents: AiSeoDrugContent[];
 
   @CreateDateColumn()
   createdAt: Date;

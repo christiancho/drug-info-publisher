@@ -18,20 +18,20 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
     "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^10.0.0",
+    "@nestjs/mapped-types": "^2.0.0",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.0.0",
     "@nestjs/typeorm": "^10.0.0",
-    "@nestjs/config": "^3.0.0",
-    "@nestjs/mapped-types": "^2.0.0",
-    "typeorm": "^0.3.17",
-    "pg": "^8.11.0",
-    "class-validator": "^0.14.0",
     "class-transformer": "^0.5.1",
-    "@anthropic-ai/sdk": "^0.24.0",
+    "class-validator": "^0.14.0",
+    "pg": "^8.11.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
+    "typeorm": "^0.3.17",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
@@ -55,7 +55,7 @@
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.4.3",
     "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.2.1",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.3"
   },
   "jest": {

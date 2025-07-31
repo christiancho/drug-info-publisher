@@ -2,256 +2,32 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { JSDOM } from 'jsdom';
+
+import { parseDrug } from '../functions/src/parseDrug';
+import { sanitizeString } from '../functions/src/sanitizeString';
 
 /**
- * Step 4: Clean text to remove invisible/weird characters but preserve medical content
+ * Recursively sanitize all "content" keys in an object
  */
-function sanitizeText(text: string): string {
-  if (!text || typeof text !== 'string') {
-    return text;
-  }
-  
-  // Remove only specific problematic characters while preserving medical content
-  const cleaned = text
-    .replace(/Â/g, '') // Remove the specific Â character
-    .replace(/[\u00A0\u2000-\u200D\u2028-\u2029\u202F\u205F\u3000\uFEFF]/g, ' ') // Replace invisible/zero-width chars with space
-    .replace(/\s+/g, ' ') // Replace multiple whitespace with single space
-    .trim();
-  
-  return cleaned;
-}
-
-/**
- * Step 3: Sanitize HTML content by cleaning text between tags
- */
-function sanitizeHTMLContent(html: string): string {
-  if (!html || typeof html !== 'string') {
-    return html;
-  }
-  
-  // Use regex to find and clean text content between HTML tags
-  return html.replace(/>([^<]+)</g, (match, textContent) => {
-    const cleaned = sanitizeText(textContent);
-    return `>${cleaned}<`;
-  });
-}
-
-interface ParsedSection {
-  title?: string;
-  content: Array<{
-    type: 'paragraph' | 'list' | 'table' | 'subsection';
-    content: string | string[] | TableData | SubsectionData;
-  }>;
-}
-
-interface TableData {
-  headers: string[];
-  rows: string[][];
-}
-
-interface SubsectionData {
-  title: string;
-  content: Array<{
-    type: 'paragraph' | 'list' | 'table';
-    content: string | string[] | TableData;
-  }>;
-}
-
-/**
- * Step 2: Check if a string contains HTML
- */
-function hasHTML(str: string): boolean {
-  return typeof str === 'string' && str.includes('<') && str.includes('>');
-}
-
-/**
- * Parse HTML table into structured data
- */
-function parseTable(table: Element): TableData {
-  const headers: string[] = [];
-  const rows: string[][] = [];
-
-  // Extract headers
-  const headerCells = table.querySelectorAll('thead tr th, tr:first-child th, tr:first-child td');
-  headerCells.forEach(cell => {
-    headers.push(sanitizeText(cell.textContent || ''));
-  });
-
-  // Extract rows
-  const dataRows = table.querySelectorAll('tbody tr, tr:not(:first-child)');
-  dataRows.forEach(row => {
-    const cells = row.querySelectorAll('td, th');
-    const rowData: string[] = [];
-    cells.forEach(cell => {
-      rowData.push(sanitizeText(cell.textContent || ''));
-    });
-    if (rowData.length > 0) {
-      rows.push(rowData);
-    }
-  });
-
-  return { headers, rows };
-}
-
-/**
- * Parse HTML list into array of strings
- */
-function parseList(list: Element): string[] {
-  const items: string[] = [];
-  const listItems = list.querySelectorAll('li');
-  
-  listItems.forEach(item => {
-    const text = sanitizeText(item.textContent || '');
-    if (text) {
-      items.push(text);
-    }
-  });
-
-  return items;
-}
-
-/**
- * Parse subsection with nested content
- */
-function parseSubsection(section: Element): SubsectionData {
-  const title = sanitizeText(section.querySelector('h1, h2, h3, h4, h5, h6')?.textContent || '');
-  const content: Array<{ type: 'paragraph' | 'list' | 'table'; content: string | string[] | TableData }> = [];
-
-  // Process child elements
-  const children = Array.from(section.children);
-  for (const child of children) {
-    if (child.tagName.match(/^H[1-6]$/)) {
-      // Skip headers as they're used as titles
-      continue;
-    } else if (child.tagName === 'P') {
-      const text = sanitizeText(child.textContent || '');
-      if (text) {
-        content.push({ type: 'paragraph', content: text });
-      }
-    } else if (child.tagName === 'UL' || child.tagName === 'OL') {
-      const items = parseList(child);
-      if (items.length > 0) {
-        content.push({ type: 'list', content: items });
-      }
-    } else if (child.tagName === 'TABLE') {
-      const tableData = parseTable(child);
-      content.push({ type: 'table', content: tableData });
-    }
-  }
-
-  return { title, content };
-}
-
-/**
- * Parse HTML section into structured JSON
- */
-function parseHTMLSection(html: string): ParsedSection | null {
-  if (!html || typeof html !== 'string') {
-    return null;
-  }
-
-  try {
-    const dom = new JSDOM(html);
-    const document = dom.window.document;
-    const section = document.querySelector('section') || document.body;
-
-    if (!section) {
-      return null;
-    }
-
-    const title = sanitizeText(section.querySelector('h1')?.textContent || '');
-    const content: Array<{
-      type: 'paragraph' | 'list' | 'table' | 'subsection';
-      content: string | string[] | TableData | SubsectionData;
-    }> = [];
-
-    // Get all direct children of the section
-    const children = Array.from(section.children);
-    
-    for (const child of children) {
-      if (child.tagName.match(/^H[1-6]$/) && child !== section.querySelector('h1')) {
-        // This is a subsection header - look for following content until next header
-        const subsectionElements = [child];
-        let nextSibling = child.nextElementSibling;
-        
-        while (nextSibling && !nextSibling.tagName.match(/^H[1-6]$/)) {
-          subsectionElements.push(nextSibling);
-          nextSibling = nextSibling.nextElementSibling;
-        }
-
-        // Create a temporary container for the subsection
-        const tempDiv = document.createElement('div');
-        subsectionElements.forEach(el => tempDiv.appendChild(el.cloneNode(true)));
-        
-        const subsectionData = parseSubsection(tempDiv);
-        if (subsectionData.title || subsectionData.content.length > 0) {
-          content.push({ type: 'subsection', content: subsectionData });
-        }
-      } else if (child.tagName === 'P') {
-        const text = sanitizeText(child.textContent || '');
-        if (text) {
-          content.push({ type: 'paragraph', content: text });
-        }
-      } else if (child.tagName === 'UL' || child.tagName === 'OL') {
-        const items = parseList(child);
-        if (items.length > 0) {
-          content.push({ type: 'list', content: items });
-        }
-      } else if (child.tagName === 'TABLE') {
-        const tableData = parseTable(child);
-        content.push({ type: 'table', content: tableData });
-      } else if (child.tagName === 'DIV' && child.classList.contains('Section')) {
-        // Handle nested sections
-        const subsectionData = parseSubsection(child);
-        if (subsectionData.title || subsectionData.content.length > 0) {
-          content.push({ type: 'subsection', content: subsectionData });
-        }
-      }
-    }
-
-    return { title: title || undefined, content };
-  } catch (error) {
-    console.error('Error parsing HTML:', error);
-    return null;
-  }
-}
-
-/**
- * Step 2: Recursively process all fields to find HTML and convert to structured JSON
- */
-function processFields(obj: any, path: string): any {
-  if (typeof obj === 'string') {
-    if (hasHTML(obj)) {
-      const fieldName = path.split('.').pop() || 'unknown';
-      console.log(`    🔧 Processing HTML field: ${fieldName} (${obj.length} chars)...`);
-      
-      // Step 3: Parse HTML into structured JSON
-      console.log(`      🔄 Converting HTML to structured JSON...`);
-      const parsedJSON = parseHTMLSection(obj);
-      
-      if (parsedJSON) {
-        console.log(`       ✅ HTML field converted to JSON structure`);
-        return parsedJSON;
-      } else {
-        console.log(`       ⚠️  HTML parsing failed, falling back to text sanitization`);
-        return sanitizeText(obj);
-      }
-    }
-    return sanitizeText(obj);
+function sanitizeContentKeys(obj: any): any {
+  if (obj === null || obj === undefined) {
+    return obj;
   }
   
   if (Array.isArray(obj)) {
-    return obj.map((item, i) => processFields(item, `${path}[${i}]`));
+    return obj.map(item => sanitizeContentKeys(item));
   }
   
-  if (typeof obj === 'object' && obj !== null) {
-    const processedObject: any = {};
+  if (typeof obj === 'object') {
+    const result: any = {};
     for (const [key, value] of Object.entries(obj)) {
-      const newPath = path ? `${path}.${key}` : key;
-      processedObject[key] = processFields(value, newPath);
+      if (key === 'content' && typeof value === 'string') {
+        result[key] = sanitizeString(value);
+      } else {
+        result[key] = sanitizeContentKeys(value);
+      }
     }
-    return processedObject;
+    return result;
   }
   
   return obj;
@@ -271,10 +47,10 @@ function main() {
 
   // File paths
   const dataDir = path.join(process.cwd(), 'data');
-  const jsonDir = path.join(dataDir, 'json');
+  const jsonDir = path.join(dataDir, 'sanitized');
   
   const inputFileName = `chunk_${chunkNumber}.json`;
-  const inputFile = path.join(dataDir, inputFileName);
+  const inputFile = path.join(dataDir, 'original', inputFileName);
   const outputFile = path.join(jsonDir, inputFileName);
   
   // Step 1: Read from the JSON file
@@ -298,11 +74,15 @@ function main() {
   
   // Step 2-5: Process all fields and convert HTML to JSON
   console.log(`\n🔍 Step 2-5: Processing fields and converting HTML to structured JSON...`);
-  const processedData = processFields(originalData, 'root');
+  const processedData = parseDrug(originalData);
   
-  // Step 5: Save the resulting drug info under /data/json
-  console.log(`\n💾 Step 5: Saving structured JSON data...`);
-  fs.writeFileSync(outputFile, JSON.stringify(processedData, null, 2), 'utf-8');
+  // Step 6: Sanitize all "content" keys
+  console.log(`\n🧹 Step 6: Sanitizing content fields...`);
+  const sanitizedData = sanitizeContentKeys(processedData);
+  
+  // Step 7: Save the resulting drug info under /data/json
+  console.log(`\n💾 Step 7: Saving sanitized JSON data...`);
+  fs.writeFileSync(outputFile, JSON.stringify(sanitizedData, null, 2), 'utf-8');
   const processedSize = fs.readFileSync(outputFile, 'utf-8').length;
   
   console.log(`  ✅ Saved to ${outputFile}`);

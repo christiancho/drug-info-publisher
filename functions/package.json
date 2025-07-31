@@ -1,0 +1,9 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "himalaya": "^1.1.0",
+    "is-html": "^2.0.0"
+  }
+}

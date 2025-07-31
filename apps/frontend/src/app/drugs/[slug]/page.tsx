@@ -8,8 +8,10 @@ import {
   Flex,
   Button,
   Callout,
+  Card,
 } from '@radix-ui/themes';
 import { ArrowLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
+import { renderContentNode } from '../../../components/JsonToReact/JsonToReact';
 
 interface DrugContent {
   genericName?: string;
@@ -17,6 +19,23 @@ interface DrugContent {
   strength?: string;
   dosageForm?: string;
   route?: string;
+  indicationsAndUsage?: any;
+  dosageAndAdministration?: any;
+  dosageFormsAndStrengths?: any;
+  contraindications?: any;
+  warningsAndPrecautions?: any;
+  adverseReactions?: any;
+  clinicalPharmacology?: any;
+  clinicalStudies?: any;
+  mechanismOfAction?: any;
+  boxedWarning?: any;
+  highlights?: any;
+  description?: any;
+  howSupplied?: any;
+  instructionsForUse?: any;
+  nonclinicalToxicology?: any;
+  useInSpecificPopulations?: any;
+  drugInteractions?: any;
 }
 
 interface AiSeoDrugContent {
@@ -67,8 +86,64 @@ export default async function DrugDetailPage({ params }: {
 
   if (!drug) return notFound();
 
+  // Generate structured data for SEO
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Drug",
+      "name": drug.drugName,
+      "url": `https://prescriberpoint.com/drugs/${drug.slug}`,
+      "description": drug.aiSeoContents?.[0]?.metaDescription || `Comprehensive drug information for ${drug.drugName}`,
+      ...(drug.content?.genericName && { "nonProprietaryName": drug.content.genericName }),
+      ...(drug.brandName && { "tradeName": drug.brandName }),
+      ...(drug.labeler && { "manufacturer": { "@type": "Organization", "name": drug.labeler } }),
+      ...(drug.content?.dosageForm && { "dosageForm": drug.content.dosageForm }),
+      ...(drug.content?.route && { "administrationRoute": drug.content.route }),
+      ...(drug.content?.strength && { "drugUnit": drug.content.strength }),
+      ...(drug.content?.indicationsAndUsage && { "indication": "See full prescribing information" }),
+      ...(drug.content?.contraindications && { "contraindication": "See full prescribing information" }),
+      ...(drug.content?.warningsAndPrecautions && { "warning": "See full prescribing information" }),
+      ...(drug.content?.clinicalPharmacology && { "clinicalPharmacology": "See full prescribing information" }),
+      ...(drug.content?.mechanismOfAction && { "mechanismOfAction": "See full prescribing information" }),
+      "isProprietary": !!drug.brandName,
+      "prescriptionStatus": "PrescriptionOnly"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://prescriberpoint.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Drugs",
+          "item": "https://prescriberpoint.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": drug.drugName,
+          "item": `https://prescriberpoint.com/drugs/${drug.slug}`
+        }
+      ]
+    }
+  ];
+
   return (
     <Box>
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
+      />
+      
       {/* Header */}
       <Box className="prescriber-point-header" style={{ color: 'white', padding: '2rem 1rem' }}>
         <Container size="4">
@@ -116,14 +191,227 @@ export default async function DrugDetailPage({ params }: {
             </Callout.Text>
           </Callout.Root>
         ) : (
-          <Flex direction="column" gap="6">
-            {/* Note: Detailed label content sections removed for performance */}
-            <Callout.Root color="gray">
-              <Callout.Text>
-                Detailed prescribing information has been removed from this view for improved performance. 
-                Essential drug information is displayed in the header above.
-              </Callout.Text>
-            </Callout.Root>
+          <Flex direction="column" gap="2">
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Indications and Usage</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.indicationsAndUsage ? (
+                  <div>{renderContentNode(drug.content.indicationsAndUsage)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Dosage and Administration</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.dosageAndAdministration ? (
+                  <div>{renderContentNode(drug.content.dosageAndAdministration)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Dosage Forms and Strengths</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.dosageFormsAndStrengths ? (
+                  <div>{renderContentNode(drug.content.dosageFormsAndStrengths)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Contraindications</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.contraindications ? (
+                  <div>{renderContentNode(drug.content.contraindications)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Warnings and Precautions</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.warningsAndPrecautions ? (
+                  <div>{renderContentNode(drug.content.warningsAndPrecautions)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Adverse Reactions</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.adverseReactions ? (
+                  <div>{renderContentNode(drug.content.adverseReactions)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Clinical Pharmacology</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.clinicalPharmacology ? (
+                  <div>{renderContentNode(drug.content.clinicalPharmacology)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Clinical Studies</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.clinicalStudies ? (
+                  <div>{renderContentNode(drug.content.clinicalStudies)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Mechanism of Action</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.mechanismOfAction ? (
+                  <div>{renderContentNode(drug.content.mechanismOfAction)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Boxed Warning</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.boxedWarning ? (
+                  <div>{renderContentNode(drug.content.boxedWarning)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Highlights</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.highlights ? (
+                  <div>{renderContentNode(drug.content.highlights)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Description</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.description ? (
+                  <div>{renderContentNode(drug.content.description)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">How Supplied</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.howSupplied ? (
+                  <div>{renderContentNode(drug.content.howSupplied)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Instructions for Use</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.instructionsForUse ? (
+                  <div>{renderContentNode(drug.content.instructionsForUse)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Nonclinical Toxicology</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.nonclinicalToxicology ? (
+                  <div>{renderContentNode(drug.content.nonclinicalToxicology)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Use in Specific Populations</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.useInSpecificPopulations ? (
+                  <div>{renderContentNode(drug.content.useInSpecificPopulations)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
+
+            <details style={{ marginBottom: '0.5rem' }}>
+              <summary style={{ cursor: 'pointer', padding: '1rem', backgroundColor: 'var(--color-panel)', borderRadius: '8px', marginBottom: '0.5rem', borderBottom: '1px solid var(--gray-6)' }}>
+                <Text weight="medium">Drug Interactions</Text>
+              </summary>
+              <Box style={{ padding: '1rem', backgroundColor: 'var(--gray-2)', borderRadius: '8px' }}>
+                {drug.content?.drugInteractions ? (
+                  <div>{renderContentNode(drug.content.drugInteractions)}</div>
+                ) : (
+                  <Text size="2" color="gray">No content available</Text>
+                )}
+              </Box>
+            </details>
           </Flex>
         )}
       </Container>

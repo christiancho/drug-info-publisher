@@ -22,7 +22,7 @@ import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
 interface Drug {
   slug: string;
   drugName: string;
-  labelerName: string;
+  labeler: string;
   brandName?: string;
 }
 
@@ -36,9 +36,11 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState('');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
-  const [limit, setLimit] = useState(3);
+  const [limit, setLimit] = useState(6);
+  const [isSearching, setIsSearching] = useState(false);
 
   const fetchDrugs = async (searchTerm: string = '', currentPage: number = 1, currentLimit: number = limit) => {
     try {
@@ -69,9 +71,68 @@ export default function Home() {
     }
   };
 
+  // Debounce search input
   useEffect(() => {
-    fetchDrugs(search, page, limit);
-  }, [search, page, limit]);
+    if (search !== debouncedSearch) {
+      setIsSearching(true);
+    }
+    
+    const timer = setTimeout(() => {
+      setDebouncedSearch(search);
+      setIsSearching(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [search, debouncedSearch]);
+
+  // Fetch drugs when debounced search, page, or limit changes
+  useEffect(() => {
+    fetchDrugs(debouncedSearch, page, limit);
+  }, [debouncedSearch, page, limit]);
+
+  // Add structured data for homepage
+  useEffect(() => {
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PrescriberPoint",
+      "url": "https://prescriberpoint.com",
+      "description": "Comprehensive Drug Information Platform - Access detailed pharmaceutical information, prescribing details, and drug safety data.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://prescriberpoint.com?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PrescriberPoint",
+        "url": "https://prescriberpoint.com"
+      }
+    };
+
+    // Remove existing structured data script if it exists
+    const existingScript = document.querySelector('script[type="application/ld+json"]');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    // Add new structured data script
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+
+    // Cleanup function to remove the script when component unmounts
+    return () => {
+      const scriptToRemove = document.querySelector('script[type="application/ld+json"]');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, []);
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
@@ -104,7 +165,11 @@ export default function Home() {
           <Box style={{ flex: 1 }}>
             <TextField.Root size="3" placeholder="Search drugs by name..." value={search} onChange={handleSearchChange}>
               <TextField.Slot>
-                <MagnifyingGlassIcon height="16" width="16" />
+                {isSearching ? (
+                  <Spinner size="1" />
+                ) : (
+                  <MagnifyingGlassIcon height="16" width="16" />
+                )}
               </TextField.Slot>
             </TextField.Root>
           </Box>
@@ -118,7 +183,7 @@ export default function Home() {
                 max="50" 
                 value={limit.toString()} 
                 onChange={(e) => {
-                  const newLimit = parseInt(e.target.value) || 3;
+                  const newLimit = parseInt(e.target.value) || 6;
                   setLimit(newLimit);
                   setPage(1);
                 }}
@@ -154,14 +219,14 @@ export default function Home() {
         {!loading && !error && drugs.length > 0 && (
           <Grid columns={{ initial: '1', md: '2', lg: '3' }} gap="4">
             {drugs.map((drug) => (
-              <Link key={drug.slug} href={`/drugs/${drug.slug}`} title={`View details for ${drug.drugName}`}>
+              <Link key={drug.slug} href={`/drugs/${drug.slug}`} title={`View details for ${drug.drugName}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <Card className="drug-card" style={{ cursor: 'pointer', transition: 'all 0.2s', minHeight: '10rem', display: 'flex', alignItems: 'flex-end' }}>
                   <Flex direction="column" gap="2" style={{ width: '100%' }}>
                     <Heading size="4" mb="2" style={{ lineHeight: '1.3' }}>
                       {drug.drugName}
                     </Heading>
                     <Text size="2" color="gray">
-                      <strong>Labeler:</strong> {drug.labelerName}
+                      <strong>Labeler:</strong> {drug.labeler}
                     </Text>
                     {drug.brandName && (
                       <Badge color="blue" variant="soft">
